@@ -1,0 +1,56 @@
+@use './abstracts/' as *;
+
+/** // *======================== GLOBAL ========================* // **/
+
+html {
+  scroll-behavior: smooth;
+  scrollbar-gutter: stable;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  overflow: clip;
+  position: relative;
+  color: #fff;
+  font-family: lato, Arial, Helvetica, sans-serif;
+  background-image: linear-gradient(#1e3040, #567c7e);
+}
+
+.sections-wrapper {
+  background-image: linear-gradient(#1e3040, #567c7e);
+  margin-top: calc(-1 * const(4px));
+  color: #fff;
+  box-shadow: 0 calc(-1 * desk(60px, 0)) desk(90px, 40px) const(60px) #1e3040;
+
+  position: relative;
+  z-index: 1;
+}
+
+section {
+  padding-block: desk(60px, 50px);
+
+  @include TABLET {
+    padding-block: tab(50px, 40px);
+  }
+}
+
+.container {
+  max-width: const(1440px);
+  height: 100%;
+
+  margin-inline: auto;
+  padding-inline: desk(62px, 40px);
+
+  @include TABLET {
+    padding-inline: tab(40px, 16px);
+  }
+
+  @include MOBILE {
+    padding-inline: mob(16px * $mobAsp, 16px);
+  }
+}

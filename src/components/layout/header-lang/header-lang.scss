@@ -1,0 +1,71 @@
+@use '@/styles/abstracts' as *;
+
+/*^ // ^======================== header-lang ========================^ // ^*/
+
+.header-lang {
+  display: flex;
+  width: 80px;
+  padding: 10px;
+  position: relative;
+  cursor: pointer;
+
+  &:hover {
+    .header-lang__dropdown {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+  @media (max-width: $MOBILE) {
+    margin: 0 auto;
+  }
+
+  &__selected {
+    display: flex;
+    align-items: center;
+  }
+
+  &__icon {
+    margin-right: 10px;
+    @include square(const(20px));
+    border-radius: 50%;
+    overflow: clip;
+    flex-shrink: 0;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__name {
+    color: #fff;
+    font-size: const(14px);
+  }
+
+  &__dropdown {
+    padding: const(10px);
+    position: absolute;
+    left: -1px;
+    top: 50px;
+    visibility: hidden;
+    opacity: 0;
+    border-radius: 0 0 10px 10px;
+    background: #247688;
+    transition: all .3s;
+
+    @media (max-width: $MOBILE) {
+      background: transparent;
+      margin-inline: auto;
+    }
+  }
+
+  &__dropdown-link {
+    display: flex;
+    align-items: center;
+
+    &:hover .header-lang__dropdown-name {
+      color: $hover-color;
+    }
+  }
+}

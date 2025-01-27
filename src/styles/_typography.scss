@@ -1,0 +1,23 @@
+@use './abstracts/' as *;
+
+/** // *======================== typography ========================* // **/
+
+.heading {
+  font-family: druk, Arial, Helvetica, sans-serif;
+  font-size: desk(64px, 50px);
+  font-weight: 900;
+  text-align: center;
+  line-height: 1.4;
+
+  @media (max-width: $TABLET) {
+    font-size: tab(50px, 30px);
+  }
+
+  &._main {
+    font-size: desk(72px, 60px);
+
+    @media (max-width: $TABLET) {
+      font-size: tab(60px, 40px);
+    }
+  }
+}

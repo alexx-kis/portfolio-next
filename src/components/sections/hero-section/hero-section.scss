@@ -1,0 +1,52 @@
+@use '@/styles/abstracts' as *;
+
+/*@ // @======================== hero-section ========================@ // @*/
+
+.hero {
+  height: 100dvh;
+  position: relative;
+  z-index: 0;
+  background-image: url('/hero-bg.jpg');
+  background-color: #1e3040;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 100%;
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: const(820px);
+    height: 100%;
+    margin: 0 auto;
+  }
+
+  &__heading {
+    align-self: flex-start;
+    margin-bottom: const(10px);
+  }
+
+  &__text {
+    font-size: desk(44px, 38px);
+    font-family: druk;
+    margin-bottom: const(50px);
+
+    @include TABLET {
+      font-size: tab(38px, 30px);
+      margin-bottom: tab(50px, 20px);
+    }
+  }
+
+  &__button-box {}
+
+  &__button {
+    align-self: flex-start;
+    display: block;
+    max-width: const(200px);
+    padding: const(10px);
+    border-radius: const(10px);
+    background: linear-gradient(to left, #1e6372, #2f96b0);
+    color: #fff;
+    font-size: const(14px);
+  }
+}
