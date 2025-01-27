@@ -1,4 +1,6 @@
-import { aboutSectionText } from '@/constants/data';
+'use client'
+
+import { aboutSectionText } from '@/data/about';
 import { useAboutAnimation } from '@/hooks/animation/use-about-animation';
 import Image from 'next/image';
 import './about-section.scss';

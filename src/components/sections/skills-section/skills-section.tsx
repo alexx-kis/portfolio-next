@@ -1,10 +1,13 @@
-import Skill from '@/components/ui/Skill/skill';
-import { SKILLS } from '@/constants/data';
+'use client'
+
+import Skill from '@/components/ui/skill/skill';
+import { SKILLS } from '@/data/skills';
 import './skills-section.scss';
+import { useSkillsAnimation } from '@/hooks/animation/use-skills-animation';
 // @======================== Skills ========================@ //
 
 export default function SkillsSection() {
-  // useSkillsAnimation();
+  useSkillsAnimation();
 
   return (
     <section className='main__skills skills scroll'>

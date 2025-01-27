@@ -1,8 +1,8 @@
 // #======================== AboutPage ========================# //
 
-function Page(): React.JSX.Element {
-  return (
+// function Page(): React.JSX.Element {
+//   return (
     
-  );
-}
-export default Page;
+//   );
+// }
+// export default Page;

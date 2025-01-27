@@ -1,0 +1,48 @@
+@use '@/styles/abstracts' as *;
+
+/*@ // @======================== works ========================@ // @*/
+
+.works {
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  &__heading {
+    margin-bottom: desk(60px, 40px);
+
+    @media (max-width: $TABLET) {
+      margin-bottom: tab(40px, 20px);
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template: repeat(4, 1fr) / repeat(3, 1fr);
+    gap: 3dvh;
+    margin-inline: auto;
+    justify-items: center;
+
+    @media (max-width: $TABLET) {
+      grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+    }
+
+    @media (max-width: $MOBILE) {
+      display: flex;
+      width: 100vw;
+      margin-inline: 0;
+      position: relative;
+      left: -20px;
+      overflow: auto;
+      justify-items: start;
+      scroll-snap-type: x mandatory;
+      @include hide-scrollbar;
+      height: calc(100dvh - mob(250px, 150px));
+    }
+  }
+
+  &__item {
+    aspect-ratio: 16 / 9;
+  }
+}
