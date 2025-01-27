@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.4.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 274.6 383.2" enable-background="new 0 0 274.6 383.2" xml:space="preserve">
+<g id="Layer_1">
+	<path fill="#000F15" d="M63,71.5L174.6,5.2c30.6-17.8,74,15.3,83.8,25.8L235,166.7c0,43.8-22.8,84.4-60.1,107.3L55.7,375.7
+		c-23-9-55.7-29.4-55.7-56.5V182.4C0,136.9,23.9,94.8,63,71.5z"/>
+	<path fill="#293336" stroke="#445052" stroke-width="8" stroke-miterlimit="10" d="M97,97.5l121.2-72.1
+		c23.1-13.7,52.3,2.9,52.3,29.8v136.6c0,43.8-22.8,84.4-60.1,107.3L88.3,373.8c-23.1,14.1-52.7-2.5-52.7-29.5V205.6
+		C35.6,161.3,58.9,120.2,97,97.5z"/>
+	
+		<polyline fill="none" stroke="#FFFFFF" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+		97.3,201.3 144.2,228.5 98.6,307.2 	"/>
+	
+		<line fill="none" stroke="#FFFFFF" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="158.8" y1="272.7" x2="219.1" y2="237.5"/>
+	<line fill="none" x1="88.1" y1="125.7" x2="88.1" y2="138"/>
+	<g>
+		<path fill="#FB0058" d="M88.3,125.9v12.3c-1.1,0.5-2.2,0.5-3.2,0c-2.2-1.2-2.7-4.9-0.9-8.2C85.2,127.9,86.8,126.5,88.3,125.9z"/>
+		<path fill="#FF1F8A" d="M92.4,134.1c-1,2-2.5,3.4-4.1,4v-12.3c1.1-0.5,2.2-0.5,3.2,0C93.7,127,94.1,130.7,92.4,134.1z"/>
+	</g>
+	<g>
+		<path fill="#FFB100" d="M109.1,114v12.3c-1.1,0.5-2.2,0.5-3.2,0c-2.2-1.2-2.7-4.9-0.9-8.2C106,116,107.6,114.6,109.1,114z"/>
+		<path fill="#FFD000" d="M113.2,122.2c-1,2-2.5,3.4-4.1,4V114c1.1-0.5,2.2-0.5,3.2,0C114.5,115.1,114.9,118.8,113.2,122.2z"/>
+	</g>
+	<g>
+		<path fill="#00C5B4" d="M129.9,102v12.3c-1.1,0.5-2.2,0.5-3.2,0c-2.2-1.2-2.7-4.9-0.9-8.2C126.9,104.1,128.4,102.6,129.9,102z"/>
+		<path fill="#00F19E" d="M134,110.2c-1,2-2.5,3.4-4.1,4V102c1.1-0.5,2.2-0.5,3.2,0C135.3,103.1,135.7,106.8,134,110.2z"/>
+	</g>
+	<line fill="none" x1="88.1" y1="138" x2="88.1" y2="138"/>
+</g>
+<g id="Layer_2" display="none">
+	
+		<image display="inline" overflow="visible" width="512" height="512" xlink:href="coding-icon.png"  transform="matrix(0.75 0 0 0.75 -57.4269 -4.5579)">
+	</image>
+</g>
+</svg>

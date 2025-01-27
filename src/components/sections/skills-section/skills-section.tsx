@@ -1,19 +1,20 @@
-import { useSkillsAnimation } from '../../../hooks/use-skills-animation';
-import Skill from '../../components/Skill/Skill';
+import Skill from '@/components/ui/Skill/skill';
+import { SKILLS } from '@/constants/data';
 import './skills-section.scss';
-import { SKILLS_ITEMS } from './skillsItems';
 // @======================== Skills ========================@ //
 
-export default function Skills() {
-  useSkillsAnimation();
+export default function SkillsSection() {
+  // useSkillsAnimation();
 
   return (
     <section className='main__skills skills scroll'>
       <div className='container'>
         <div className='skills__inner'>
-          <div className='skills__heading heading'>My skills</div>
+          <h2 className='skills__heading heading'>
+            My skills
+          </h2>
           <div className='skills__content'>
-            {SKILLS_ITEMS.map(({ skillsGroupTitle, skillsItems }, index) => {
+            {SKILLS.map(({ skillsGroupTitle, skillsItems }, index) => {
               return (
                 <div key={index} className='skills__group'>
                   <p className='skills__group-title'>{skillsGroupTitle}</p>
@@ -22,7 +23,6 @@ export default function Skills() {
                       return (
                         <Skill
                           key={index}
-                          className='skills__item'
                           skillIcon={skillIcon}
                           skillName={skillName}
                         />
