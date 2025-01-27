@@ -24,7 +24,7 @@ function AboutSection(): React.JSX.Element {
             </div>
             <div className='about__image'>
               <Image
-                src='/avatar.jpg'
+                src='/img/avatar-small.png'
                 alt=''
                 width={400}
                 height={400}
