@@ -1,0 +1,35 @@
+@import '../../../style/abstracts/all';
+
+/*^ //^======================== skill ========================^// ^*/
+.skill {
+  display: flex;
+  align-items: center;
+  gap: const(10px);
+  height: desk(36px, 34px);
+  padding-inline: desk(14px, 12px);
+  border-radius: desk(20px, 18px);
+  box-shadow: 0 0 const(10px) 0 #ffffff20;
+  background-image: linear-gradient(to left, #1e6372, #267e93);
+
+  @media (max-width: $TABLET) {
+    height: tab(34px, 32px);
+    padding-inline: tab(12px, 10px);
+    border-radius: tab(16px, 12px);
+  }
+
+  &__icon {
+    @include square(desk(24px, 20px));
+
+    img {
+      @include square(100%);
+    }
+  }
+
+  &__name {
+    font-size: desk(20px, 16px);
+
+    @media (max-width: $TABLET) {
+      font-size: tab(16px, 14px);
+    }
+  }
+}
