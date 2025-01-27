@@ -1,0 +1,71 @@
+@use '@/styles/abstracts' as *;
+
+/*@ // @======================== contact-section ========================@ // @*/
+
+.contact {
+
+  &__heading {
+    margin-bottom: const(30px);
+
+    @media (max-width: $TABLET) {
+      margin-bottom: tab(50px, 20px);
+    }
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: const(20px);
+
+    @media (max-width: $TABLET) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__item {
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: center;
+
+    @media (hover:hover) {
+      &:hover {
+        color: $hover-color;
+
+        svg path {
+          fill: $hover-color;
+        }
+      }
+    }
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    gap: desk(10px, 8px);
+    font-size: desk(16px, 14px);
+    transition: all 250ms;
+    color: inherit;
+  }
+
+  &__link-icon {
+    @include square(const(24px));
+
+    @media (max-width: $TABLET) {
+      @include square(tab(24px, 20px));
+    }
+
+    path {
+      transition: all 250ms;
+      fill: #fff;
+    }
+  }
+}
