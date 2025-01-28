@@ -1,13 +1,12 @@
 'use client';
 
 import Skill from '@/components/ui/skill/skill';
-import { SKILLS } from '@/data/skills';
-import { useSkillsAnimation } from '@/hooks/animation/use-skills-animation';
+import { SKILLS_CONCISE } from '@/data/skills';
 import './skills-section.scss';
 // @======================== Skills ========================@ //
 
 export default function SkillsSection() {
-  useSkillsAnimation();
+  // useSkillsAnimation();
 
   return (
     <section className='main__skills skills scroll'>
@@ -17,7 +16,7 @@ export default function SkillsSection() {
             My skills
           </h2>
           <div className='skills__content'>
-            {SKILLS.map(({ skillsGroupTitle, skillsItems }, index) => {
+            {SKILLS_CONCISE.map(({ skillsGroupTitle, skillsItems }, index) => {
               return (
                 <div key={index} className='skills__group'>
                   <p className='skills__group-title'>{skillsGroupTitle}</p>

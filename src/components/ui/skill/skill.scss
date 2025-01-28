@@ -5,11 +5,12 @@
   display: flex;
   align-items: center;
   gap: const(10px);
-  height: desk(36px, 34px);
   padding-inline: desk(14px, 12px);
-  border-radius: desk(20px, 18px);
-  box-shadow: 0 0 const(10px) 0 #ffffff20;
-  background-image: linear-gradient(to left, #1e6372, #267e93);
+  padding-block: desk(10px, 8px);
+  border-radius: desk(14px, 12px);
+  box-shadow: 0 0 const(5px) 0 #ffffff6e;
+  background-color: #32343544;
+  letter-spacing: 0.8;
 
   @media (max-width: $TABLET) {
     height: tab(34px, 32px);
@@ -18,7 +19,7 @@
   }
 
   &__icon {
-    @include square(desk(24px, 20px));
+    @include square(desk(36px, 24px));
 
     img {
       @include square(100%);
