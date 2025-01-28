@@ -1,9 +1,9 @@
-'use client'
+'use client';
 
 import Skill from '@/components/ui/skill/skill';
 import { SKILLS } from '@/data/skills';
-import './skills-section.scss';
 import { useSkillsAnimation } from '@/hooks/animation/use-skills-animation';
+import './skills-section.scss';
 // @======================== Skills ========================@ //
 
 export default function SkillsSection() {
