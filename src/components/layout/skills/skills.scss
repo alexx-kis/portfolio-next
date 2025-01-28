@@ -4,17 +4,19 @@
 
 .skills {
   &__heading {
-    margin-bottom: desk(60px, 40px);
+    margin-bottom: desk(32px, 28px);
+    text-align: left;
 
     @media (max-width: $TABLET) {
-      margin-bottom: tab(40px, 20px);
+      margin-bottom: tab(28px, 20px);
     }
   }
 
-  &__inner {
+  &__container {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    gap: desk(20px, 16px);
   }
 
   &__title {
@@ -22,19 +24,6 @@
     font-family: druk;
     font-size: 1.8dvh;
     transform: translate(-100px, 0%);
-
-    transition: all 0.8s;
-  }
-
-  &__content {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    gap: desk(50px, 40px);
-
-    @media (max-width: $TABLET) {
-      gap: tab(40px, 30px);
-    }
   }
 
   &__group {

@@ -32,6 +32,13 @@ export const useAboutAnimation = (() => {
       .to('.about__info', {
       }, '<')
       .to('.about__button', {
+      }, '<')
+      .to('.skills__heading', {
+        yPercent: -50,
+      })
+      .to('.skills__group', {
+        yPercent: -50,
+        stagger: 0.1,
       }, '<');
   });
 });

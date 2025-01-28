@@ -6,7 +6,7 @@
   align-items: center;
   gap: const(10px);
   padding-inline: desk(14px, 12px);
-  padding-block: desk(10px, 8px);
+  padding-block: desk(8px, 6px);
   border-radius: desk(14px, 12px);
   box-shadow: 0 0 const(5px) 0 #ffffff6e;
   background-color: #32343544;
@@ -19,7 +19,7 @@
   }
 
   &__icon {
-    @include square(desk(36px, 24px));
+    @include square(desk(24px, 18px));
 
     img {
       @include square(100%);
@@ -27,7 +27,7 @@
   }
 
   &__name {
-    font-size: desk(20px, 16px);
+    font-size: desk(16px, 14px);
 
     @media (max-width: $TABLET) {
       font-size: tab(16px, 14px);

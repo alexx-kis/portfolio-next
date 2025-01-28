@@ -20,4 +20,12 @@
       font-size: tab(60px, 40px);
     }
   }
+
+  &._small {
+    font-size: desk(40px, 32px);
+
+    @media (max-width: $TABLET) {
+      font-size: tab(32px, 24px);
+    }
+  }
 }

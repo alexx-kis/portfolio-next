@@ -1,6 +1,7 @@
 'use client';
 
-import { splitTextToParagraphs } from '@/app/utils/utils';
+import { splitTextToParagraphs } from '@/utils/utils';
+import Skills from '@/components/layout/skills/skills';
 import MainButton from '@/components/ui/main-button/main-button';
 import { AppRoute, basePath } from '@/constants/const';
 import { aboutSectionText } from '@/data/about';
@@ -40,14 +41,13 @@ function AboutSection(): React.JSX.Element {
               </p>
             ))}
           </div>
-          <div className='about__button-wrapper'>
-            <MainButton
-              bemClassName='about__button'
-              href={AppRoute.About}
-              text='Read more'
-              iconPath={`${basePath}/img/icons/go-to-arrow.svg`}
-            />
-          </div>
+          <Skills />
+          <MainButton
+            bemClassName='about__button'
+            href={AppRoute.About}
+            text='Learn more'
+            iconPath={`${basePath}/img/icons/go-to-arrow.svg`}
+          />
         </div>
       </div>
     </section >
