@@ -1,3 +1,4 @@
+import { basePath } from '@/constants/const';
 import './header-lang.scss';
 
 // ^======================== HeaderLang ========================^ //
@@ -10,7 +11,7 @@ function HeaderLang(): React.JSX.Element {
       <div className='header-lang__selected'>
         <div className='header-lang__icon'>
           <Image
-            src='/img/icons/eng.svg'
+            src={`${basePath}/img/icons/eng.svg`}
             width={45}
             height={45}
             alt='english'
@@ -23,7 +24,7 @@ function HeaderLang(): React.JSX.Element {
           <a className='header-lang__dropdown-link' href='index-ru.html'>
             <div className='header-lang__icon'>
               <Image
-                src='/img/icons/rus.svg'
+                src={`${basePath}/img/icons/rus.svg`}
                 width={45}
                 height={45}
                 alt='russian'

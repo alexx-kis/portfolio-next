@@ -4,6 +4,7 @@ import { aboutSectionText } from '@/data/about';
 import { useAboutAnimation } from '@/hooks/animation/use-about-animation';
 import Image from 'next/image';
 import './about-section.scss';
+import { basePath } from '@/constants/const';
 
 // @======================== AboutSection ========================@ //
 
@@ -24,7 +25,7 @@ function AboutSection(): React.JSX.Element {
             </div>
             <div className='about__image'>
               <Image
-                src='/img/avatar-small.png'
+                src={`${basePath}/img/avatar-small.png`}
                 alt=''
                 width={400}
                 height={400}
