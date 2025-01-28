@@ -8,26 +8,30 @@ gsap.registerPlugin(useGSAP);
 
 
 export const useAboutAnimation = (() => {
+  const windowHeight = window.innerHeight;
+
   useGSAP(() => {
 
     gsap.timeline({
       defaults: {
         opacity: 0,
-        yPercent: -40,
+        y: -0.25 * windowHeight,
       },
       scrollTrigger: {
         trigger: '.about',
         markers: false,
-        start: '75% 50%',
+        start: '50% 50%',
         end: '100% 0%',
         scrub: 1,
       }
     })
       .to('.about__headings', {
-      })
+      }, '<')
       .to('.about__image', {
       }, '<')
       .to('.about__info', {
+      }, '<')
+      .to('.about__button', {
       }, '<');
   });
 });

@@ -62,26 +62,6 @@ export const SKILLS = [
         skillName: 'Redux Toolkit',
         skillIcon: `${basePath}/img/icons/rtk-icon.svg`,
       },
-      {
-        skillName: 'GSAP',
-        skillIcon: `${basePath}/img/icons/gsap-icon.svg`,
-      },
-      {
-        skillName: 'Splide',
-        skillIcon: `${basePath}/img/icons/splide-icon.svg`,
-      },
-      {
-        skillName: 'Masonry',
-        skillIcon: `${basePath}/img/icons/masonry-icon.svg`,
-      },
-      {
-        skillName: 'THREEjs',
-        skillIcon: `${basePath}/img/icons/masonry-icon.svg`,
-      },
-      {
-        skillName: 'Vitest',
-        skillIcon: `${basePath}/img/icons/vitest-icon.svg`,
-      },
     ],
   },
   {
@@ -106,7 +86,7 @@ export const SKILLS = [
       },
       {
         skillName: 'Adobe Photoshop',
-        skillIcon: `${basePath}/img/icons/ps-icon.svg`,
+        skillIcon: `${basePath}/img/icons/photoshop-icon.svg`,
       },
       {
         skillName: 'Adobe Illustrator',
@@ -119,11 +99,11 @@ export const SKILLS = [
     skillsItems: [
       {
         skillName: 'English (B2)',
-        skillIcon: `${basePath}/img/icons/rus.svg`,
+        skillIcon: `${basePath}/img/icons/eng.svg`,
       },
       {
         skillName: 'Russian (native)',
-        skillIcon: `${basePath}/img/icons/eng.svg`,
+        skillIcon: `${basePath}/img/icons/rus.svg`,
       },
       {
         skillName: 'German (A2)',

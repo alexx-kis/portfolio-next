@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="a" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+  <circle cx="25" cy="25" r="25"/>
+  <polygon points="18 34.8 14.7 34.8 14.7 14.1 18 14.1 36.7 44.8 17.9 18.9 18 34.8" fill="#fff"/>
+  <polygon points="30.3 14.1 33.2 14.1 33.2 31.6 30.3 27.2 30.3 14.1" fill="#fff"/>
+</svg>

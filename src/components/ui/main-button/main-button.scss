@@ -1,0 +1,15 @@
+@use '@/styles/abstracts' as *;
+
+/*^ // ^======================== main-button ========================^ // ^*/
+
+.main-button {
+  display: inline-flex;
+  align-items: center;
+  gap: const(4px);
+  padding-inline: const(20px);
+  padding-block: const(14px);
+  border-radius: const(12px);
+  background: linear-gradient(to left, #1e6372, #2f96b0);
+  color: #fff;
+  font-size: const(20px);
+}

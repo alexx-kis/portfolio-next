@@ -1,13 +1,14 @@
 'use client';
 
+import MainButton from '@/components/ui/main-button/main-button';
+import { basePath } from '@/constants/const';
 import { useHeroAnimation } from '@/hooks/animation/use-hero-animation';
 import './hero-section.scss';
-import { basePath } from '@/constants/const';
 
 // @======================== HeroSection ========================@ //
 
 function HeroSection(): React.JSX.Element {
-  useHeroAnimation();
+  // useHeroAnimation();
   return (
     <section
       className='main__hero hero scroll'
@@ -19,10 +20,14 @@ function HeroSection(): React.JSX.Element {
         <div className='hero__inner'>
           <h1 className='hero__heading heading _main'>Hi! I&apos;m Alex</h1>
           <p className='hero__text'>a frontend developer</p>
-          <div className='hero__heading main-heading loading'></div>
-          <a className='hero__button loading' href='./docs/CV.pdf' target='_blank'>
-            Download CV
-          </a>
+          <div className='hero__button-box'>
+            <MainButton
+              bemClassName='hero__button'
+              href=''
+              text='Download CV'
+              iconPath={`${basePath}/img/icons/download-arrow.svg`}
+            />
+          </div>
         </div>
       </div>
     </section>

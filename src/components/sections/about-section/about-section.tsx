@@ -1,16 +1,17 @@
-'use client'
+'use client';
 
+import { splitTextToParagraphs } from '@/app/utils/utils';
+import MainButton from '@/components/ui/main-button/main-button';
+import { AppRoute, basePath } from '@/constants/const';
 import { aboutSectionText } from '@/data/about';
-import { useAboutAnimation } from '@/hooks/animation/use-about-animation';
 import Image from 'next/image';
 import './about-section.scss';
-import { basePath } from '@/constants/const';
 
 // @======================== AboutSection ========================@ //
 
 function AboutSection(): React.JSX.Element {
 
-  useAboutAnimation();
+  // useAboutAnimation();
 
   return (
     <section className='main__about about' id='about'>
@@ -33,11 +34,19 @@ function AboutSection(): React.JSX.Element {
             </div>
           </div>
           <div className='about__info'>
-            {aboutSectionText.split('\n').map((line, index) => (
+            {splitTextToParagraphs(aboutSectionText).map((paragraph, index) => (
               <p key={index} className='about__text'>
-                {line}
+                {paragraph}
               </p>
             ))}
+          </div>
+          <div className='about__button-wrapper'>
+            <MainButton
+              bemClassName='about__button'
+              href={AppRoute.About}
+              text='Read more'
+              iconPath={`${basePath}/img/icons/go-to-arrow.svg`}
+            />
           </div>
         </div>
       </div>

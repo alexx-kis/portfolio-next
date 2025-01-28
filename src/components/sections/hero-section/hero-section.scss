@@ -6,8 +6,6 @@
   height: 100dvh;
   position: relative;
   z-index: 0;
-  // $basePath: var(--basePath);
-  // background-image: url('#{$basePath}/img/bg/hero-bg.jpg');
   $basePath: var(--basePath);
   background-color: #1e3040;
 
@@ -44,12 +42,5 @@
 
   &__button {
     align-self: flex-start;
-    display: block;
-    max-width: const(200px);
-    padding: const(10px);
-    border-radius: const(10px);
-    background: linear-gradient(to left, #1e6372, #2f96b0);
-    color: #fff;
-    font-size: const(14px);
   }
 }
