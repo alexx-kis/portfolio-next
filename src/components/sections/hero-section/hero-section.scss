@@ -6,8 +6,11 @@
   height: 100dvh;
   position: relative;
   z-index: 0;
-  background-image: url('/img/bg/hero-bg.jpg');
+  // $basePath: var(--basePath);
+  // background-image: url('#{$basePath}/img/bg/hero-bg.jpg');
+  $basePath: var(--basePath);
   background-color: #1e3040;
+
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center 100%;

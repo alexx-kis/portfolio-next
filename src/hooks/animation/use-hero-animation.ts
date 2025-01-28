@@ -27,9 +27,9 @@ export const useHeroAnimation = () => {
       .to('.preloader', {
         display: 'none',
       })
-      .from('.hero', {
-        duration: 1,
-      }, '<')
+      // .from('.hero', {
+      //   duration: 1,
+      // }, '<')
       .from('.hero__heading', {
         xPercent: -100,
       })
