@@ -1,9 +1,9 @@
 'use client';
 
-import Skill from '@/components/ui/skill/skill';
 import { SKILLS } from '@/data/skills';
 import { useSkillsAnimation } from '@/hooks/animation/use-skills-animation';
 import './skills-section.scss';
+import Competence from '@/components/ui/competence/competence';
 // @======================== Skills ========================@ //
 
 export default function SkillsSection() {
@@ -24,7 +24,7 @@ export default function SkillsSection() {
                   <ul className='skills__list'>
                     {skillsItems.map(({ skillIcon, skillName }, index) => {
                       return (
-                        <Skill
+                        <Competence
                           key={index}
                           skillIcon={skillIcon}
                           skillName={skillName}
