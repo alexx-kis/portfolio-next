@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import './competence.scss';
+import './skill.scss';
 
 // ^======================== Skill ========================^ //
 
@@ -8,7 +8,7 @@ type SkillProps = {
   skillName: string;
 };
 
-export default function Competence(skillProps: SkillProps): React.JSX.Element {
+export default function Skill(skillProps: SkillProps): React.JSX.Element {
   const { skillIcon, skillName } = skillProps;
   return (
     <li className='skills__item skill'>
