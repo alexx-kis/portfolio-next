@@ -1,7 +1,7 @@
 'use client';
 
-import Skill from '@/components/ui/skill/skill';
-import { SKILLS } from '@/data/skills';
+// import Skill from '@/components/ui/skill/skill';
+// import { SKILLS } from '@/data/skills';
 import { useSkillsAnimation } from '@/hooks/animation/use-skills-animation';
 import './skills-section.scss';
 // @======================== Skills ========================@ //
@@ -17,7 +17,7 @@ export default function SkillsSection() {
             My skills
           </h2>
           <div className='skills__content'>
-            {SKILLS.map(({ skillsGroupTitle, skillsItems }, index) => {
+            {/* {SKILLS.map(({ skillsGroupTitle, skillsItems }, index) => {
               return (
                 <div key={index} className='skills__group'>
                   <p className='skills__group-title'>{skillsGroupTitle}</p>
@@ -34,7 +34,7 @@ export default function SkillsSection() {
                   </ul>
                 </div>
               );
-            })}
+            })} */}
           </div>
         </div>
       </div>
