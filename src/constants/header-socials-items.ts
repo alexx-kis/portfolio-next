@@ -1,17 +1,18 @@
-import { StaticImport } from 'next/dist/shared/lib/get-img-props';
+import { TelegramIcon } from '@/assets/icons';
+import React from 'react';
 import { basePath } from './const';
 
 type HeaderSocialItem = {
   href: string;
   label: string;
-  icon: string | StaticImport;
+  icon: React.ReactNode;
 };
 
 export const HEADER_SOCIALS_ITEMS: HeaderSocialItem[] = [
   {
     href: 'https://t.me/alexx_kis',
     label: 'telegram',
-    icon: `${basePath}/img/icons/telegram-icon.svg`,
+    icon: TelegramIcon,
   },
   {
     href: 'https://github.com/alexx-kis',

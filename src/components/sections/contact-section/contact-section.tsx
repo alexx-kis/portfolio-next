@@ -2,7 +2,6 @@
 
 import { CONTACTS } from '@/data/contacts';
 import { useContactAnimation } from '@/hooks/animation/use-contact-animation';
-import useReplaceImgWithSvg from '@/hooks/use-replace-Img-with-svg';
 import Image from 'next/image';
 import './contact-section.scss';
 
@@ -11,7 +10,6 @@ import './contact-section.scss';
 function ContactSection(): React.JSX.Element {
 
   useContactAnimation();
-  useReplaceImgWithSvg();
 
   return (
     <section className='contact scroll' id='contact'>
