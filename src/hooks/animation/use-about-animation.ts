@@ -13,13 +13,13 @@ export const useAboutAnimation = (() => {
     gsap.timeline({
       defaults: {
         opacity: 0,
-        yPercent: -80,
+        yPercent: -40,
       },
       scrollTrigger: {
         trigger: '.about',
         markers: false,
-        start: '110% 100%',
-        end: '110% 0%',
+        start: '75% 50%',
+        end: '100% 0%',
         scrub: 1,
       }
     })
@@ -29,7 +29,5 @@ export const useAboutAnimation = (() => {
       }, '<')
       .to('.about__info', {
       }, '<');
-
-
   });
 });
