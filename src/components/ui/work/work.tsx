@@ -33,6 +33,7 @@ function Work(workProps: WorkProps): React.JSX.Element {
       }}
     >
       <a href={href} className='work__link' aria-label={label}>
+        <div className='work__image-box'>
         <Image
           className='work__image'
           src={!isMobileScreen ? (isHovered ? gifSrc : imgSrc) : gifMobSrc}
@@ -40,6 +41,7 @@ function Work(workProps: WorkProps): React.JSX.Element {
           width={417}
           height={234}
         />
+        </div>
         <div className='work__info'>
           <p className='work__title'>
             {title}

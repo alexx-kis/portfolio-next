@@ -6,8 +6,8 @@
   width: 100%;
   height: 100%;
   padding: const(14px);
-  background-color: $gray;
   box-shadow: $boxShadow;
+  background-color: $gray;
   transition: all 250ms;
 
   @media (hover:hover) {
@@ -20,9 +20,9 @@
     flex-shrink: 0;
     width: 100vw;
     padding-inline: 20px;
-    scroll-snap-align: start;
-    background-color: transparent;
     box-shadow: none;
+    background-color: transparent;
+    scroll-snap-align: start;
   }
 
   &__link {
@@ -33,28 +33,44 @@
     color: inherit;
 
     @media (max-width: $MOBILE) {
+      justify-content: space-between;
+      gap: 10px;
       width: auto;
       height: 100%;
+      padding: 10px;
       overflow: clip;
       border-radius: inherit;
       box-shadow: none;
-      background-color: $gray;
-      padding: 10px;
       box-shadow: $boxShadow;
+      background-color: $gray;
+      container-type: size;
+    }
+  }
 
+  &__image-box {
+    margin-bottom: desk(14px, 10px);
+
+    @media (max-width: $MOBILE) {
+      display: flex;
+      justify-content: center;
+      max-height: 72cqh;
+      margin-bottom: 0;
+      overflow: clip;
     }
   }
 
   &__image {
     width: 100%;
-    height: auto;
     aspect-ratio: 16 / 9;
-    margin-bottom: desk(14px, 10px);
     overflow: clip;
     object-fit: cover;
     transition: all .3s;
+
     @media (max-width: $MOBILE) {
-      aspect-ratio: 9 / 16;
+      width: auto;
+      height: 100%;
+      aspect-ratio: 0.46;
+      object-fit: contain;
     }
   }
 
