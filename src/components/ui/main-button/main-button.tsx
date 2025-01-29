@@ -1,6 +1,5 @@
-import useReplaceImgWithSvg from '@/hooks/use-replace-Img-with-svg';
-import Image from 'next/image';
 import Link from 'next/link';
+import Icon from '../icon/icon';
 import './main-button.scss';
 
 // ^======================== MainButton ========================^ //
@@ -12,7 +11,6 @@ type MainButtonProps = {
 };
 function MainButton(mainButtonProps: MainButtonProps): React.JSX.Element {
   const { bemClassName, href, text, iconPath } = mainButtonProps;
-  // useReplaceImgWithSvg();
   return (
     <Link
       className={`${bemClassName} main-button`}
@@ -21,13 +19,11 @@ function MainButton(mainButtonProps: MainButtonProps): React.JSX.Element {
       <div className='main-button__text'>
         {text}
       </div>
-      <div className='main-button__icon'></div>
-      <Image
-        className=''
-        src={iconPath}
-        alt=''
-        width={20}
-        height={20}
+      <Icon
+        className='main-button__icon'
+        path={iconPath}
+        width={10}
+        height={10}
       />
     </Link>
   );

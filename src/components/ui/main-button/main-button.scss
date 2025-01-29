@@ -5,11 +5,24 @@
 .main-button {
   display: inline-flex;
   align-items: center;
-  gap: const(4px);
+  gap: const(8px);
   padding-inline: const(20px);
   padding-block: const(14px);
   border-radius: const(12px);
   background: linear-gradient(to left, #1e6372, #2f96b0);
   color: #fff;
   font-size: const(20px);
+
+  &__text {
+    font-size: desk(20px, 18px);
+  }
+
+  &__icon {
+    width: desk(20px, 14px);
+    translate: 0 desk(2px, 2px);
+
+    path {
+      fill: #fff;
+    }
+  }
 }
