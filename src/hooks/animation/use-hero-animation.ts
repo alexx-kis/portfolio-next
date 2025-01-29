@@ -70,7 +70,7 @@ const initializeHeroScrollAnimation = () => {
       yPercent: -300,
       opacity: 0,
     }, '<')
-    .to('.hero__button', {
+    .to('.hero__button-box', {
       yPercent: -300,
       opacity: 0,
     }, '<');
