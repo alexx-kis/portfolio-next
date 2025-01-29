@@ -13,8 +13,12 @@ function Header(): React.JSX.Element {
   const [isInnerOpen, setIsInnerOpen] = useState(false);
   const isMobileScreen = useMediaQuery(MediaQuery.MOBILE);
 
-  const onBurgerClick = () => {
+  const handleBurgerClick = () => {
     setIsInnerOpen(!isInnerOpen);
+  };
+
+  const handleHeaderMenuLinkClick = () => {
+    setIsInnerOpen(false);
   };
 
   useEffect(() => {
@@ -35,12 +39,12 @@ function Header(): React.JSX.Element {
     <header className='header'>
       <div className='container'>
 
-        <HeaderInner isOpen={isInnerOpen} />
+        <HeaderInner isOpen={isInnerOpen} onHeaderLinkClick={handleHeaderMenuLinkClick} />
 
         {isMobileScreen && (
           <Burger
             isActive={isInnerOpen}
-            onBurgerClick={onBurgerClick}
+            onBurgerClick={handleBurgerClick}
           />
         )}
 

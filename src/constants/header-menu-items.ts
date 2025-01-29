@@ -1,14 +1,11 @@
-export const basePath = process.env.NODE_ENV === 'production'
-  ? '/portfolio-next'
-  : '';
+import { AppRoute } from './const';
 
-export enum AppRoute {
-  Main = '/',
-  About = '/about',
-  Works = '/works'
-}
+type HeaderMenuItem = {
+  link: AppRoute | string;
+  name: string;
+};
 
-export const HEADER_MENU_ITEMS = [
+export const HEADER_MENU_ITEMS: HeaderMenuItem[] = [
   {
     link: AppRoute.Main,
     name: 'Home',

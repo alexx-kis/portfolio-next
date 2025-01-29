@@ -1,20 +1,23 @@
-// import { MOBILE } from '@/constants/viewport';
+import { HEADER_MENU_ITEMS } from '@/constants/const';
 import { MediaQuery } from '@/constants/viewport';
 import { useMediaQuery } from '@/hooks/use-media-query';
 import clsx from 'clsx';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import HeaderLang from '../header-lang/header-lang';
-import HeaderMenu from '../header-menu/header-menu';
 import HeaderSocials from '../header-socials/header-socials';
 import './header-inner.scss';
 
 // ^======================== HeaderInner ========================^ //
 type HeaderInnerProps = {
   isOpen: boolean;
+  onHeaderLinkClick: () => void;
 };
 
 function HeaderInner(headerInnerProps: HeaderInnerProps): React.JSX.Element {
-  const { isOpen } = headerInnerProps;
+  const { isOpen, onHeaderLinkClick } = headerInnerProps;
   const isMobileScreen = useMediaQuery(MediaQuery.MOBILE);
+  const pathname = usePathname();
 
   return (
     <div
@@ -23,7 +26,24 @@ function HeaderInner(headerInnerProps: HeaderInnerProps): React.JSX.Element {
         { '_open': isMobileScreen && isOpen }
       )}
     >
-      <HeaderMenu />
+      <ul className='header-inner__menu'>
+        {HEADER_MENU_ITEMS.map(({ link, name }, index) => {
+          return (
+            <li key={index} className='header-inner__menu-item'>
+              <Link
+                href={link}
+                className={clsx(
+                  'header-inner__menu-link',
+                  { '_active': pathname === link }
+                )}
+                onClick={onHeaderLinkClick}
+              >
+                {name}
+              </Link>
+            </li>
+          );
+        })}
+      </ul>
       <HeaderLang />
       <HeaderSocials />
     </div>
