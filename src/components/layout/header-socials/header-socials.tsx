@@ -1,7 +1,6 @@
+import Icon from '@/components/ui/icon/icon';
 import { HEADER_SOCIALS_ITEMS } from '@/constants/header-socials-items';
-import Image from 'next/image';
 import './header-socials.scss';
-import { TelegramIcon } from '@/assets/icons';
 
 // ^======================== HeaderSocials ========================^ //
 
@@ -17,16 +16,7 @@ function HeaderSocials(): React.JSX.Element {
                 className='header-socials__link'
                 aria-label={label}
               >
-                {icon}
-                <icon/>
-                {/* <TelegramIcon/> */}
-                {/* <Image
-                  src={icon}
-                  width={25}
-                  height={25}
-                  alt={label}
-                  className='img-svg'
-                /> */}
+                <Icon className='header-socials__link' path={icon} width={10} height={10} />
               </a>
             </li>
           );

@@ -1,18 +1,16 @@
-import { TelegramIcon } from '@/assets/icons';
-import React from 'react';
 import { basePath } from './const';
 
 type HeaderSocialItem = {
   href: string;
   label: string;
-  icon: React.ReactNode;
+  icon: string;
 };
 
 export const HEADER_SOCIALS_ITEMS: HeaderSocialItem[] = [
   {
     href: 'https://t.me/alexx_kis',
     label: 'telegram',
-    icon: TelegramIcon,
+    icon: `${basePath}/img/icons/telegram-icon.svg`,
   },
   {
     href: 'https://github.com/alexx-kis',
