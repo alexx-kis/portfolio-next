@@ -10,13 +10,13 @@
   background-color: $gray;
   transition: all 250ms;
 
-
   @media (max-width: $MOBILE) {
     flex-shrink: 0;
     width: 100vw;
     padding-inline: 20px;
     background-color: transparent;
     scroll-snap-align: start;
+    box-shadow: none;
   }
 
   @media (hover:hover) {
