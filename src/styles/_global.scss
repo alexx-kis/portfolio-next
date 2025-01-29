@@ -5,7 +5,7 @@
 html {
   scroll-behavior: smooth;
   scrollbar-gutter: stable;
-  background-image: linear-gradient(#1e3040, #13191f);
+  background-image: $mainGradient;
 }
 
 .no-scroll {
@@ -23,7 +23,7 @@ html {
 }
 
 .sections-wrapper {
-  background-image: linear-gradient(#1e3040, #13191f);
+  background-image: $mainGradient;
   margin-top: calc(-1 * const(4px));
   color: #fff;
   box-shadow: 0 calc(-1 * desk(60px, 0)) desk(90px, 40px) const(60px) #1e3040;
