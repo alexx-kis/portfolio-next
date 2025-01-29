@@ -1,5 +1,5 @@
+import Image from 'next/image';
 import Link from 'next/link';
-import Icon from '../icon/icon';
 import './main-button.scss';
 
 // ^======================== MainButton ========================^ //
@@ -19,11 +19,12 @@ function MainButton(mainButtonProps: MainButtonProps): React.JSX.Element {
       <div className='main-button__text'>
         {text}
       </div>
-      <Icon
+      <Image
         className='main-button__icon'
         src={iconPath}
         width={10}
         height={10}
+        alt=''
       />
     </Link>
   );

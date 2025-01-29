@@ -25,11 +25,7 @@
   }
 
   &__icon {
-    width: desk(20px, 14px);
+    @include square(desk(20px, 14px));
     translate: 0 desk(1px, 1px);
-
-    path {
-      fill: #fff;
-    }
   }
 }
