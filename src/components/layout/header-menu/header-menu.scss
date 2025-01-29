@@ -23,8 +23,22 @@
     font-weight: 700;
     transition: all .3s;
 
+    &._active {
+      color: $orange;
+      font-size: desk(20px, 18px);
+      font-weight: 700;
+
+      &::after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: const(2px);
+        background-color: $orange;
+      }
+    }
+
     &:hover {
-      color: $hoverColor;
+      color: $orange;
     }
 
     @media (max-width: $MOBILE) {

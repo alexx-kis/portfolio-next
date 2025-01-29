@@ -6,7 +6,7 @@ import './footer.scss';
 
 function Footer(): React.JSX.Element {
   return (
-    <footer className='footer'>
+    <footer className='footer' id='contact'>
       <div className='container'>
         <div className='footer__inner'>
           <h2 className='footer__heading heading'>

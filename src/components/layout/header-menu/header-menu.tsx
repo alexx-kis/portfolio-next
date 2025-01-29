@@ -1,17 +1,21 @@
+import { AppRoute } from '@/constants/const';
+import clsx from 'clsx';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import './header-menu.scss';
 
 // ^======================== HeaderMenu ========================^ //
 const HEADER_MENU_ITEMS = [
   {
-    link: '#!',
+    link: AppRoute.Main,
     name: 'Home',
   },
   {
-    link: '#about',
+    link: AppRoute.About,
     name: 'About me',
   },
   {
-    link: '#works',
+    link: AppRoute.Works,
     name: 'My works',
   },
   {
@@ -21,14 +25,21 @@ const HEADER_MENU_ITEMS = [
 ];
 
 export default function HeaderMenu() {
+  const pathname = usePathname();
   return (
     <ul className='header-menu'>
       {HEADER_MENU_ITEMS.map(({ link, name }, index) => {
         return (
           <li key={index} className='header-menu__item'>
-            <a href={link} className='header-menu__link'>
+            <Link
+              href={link}
+              className={clsx(
+                'header-menu__link',
+                { '_active': pathname === link }
+              )}
+            >
               {name}
-            </a>
+            </Link>
           </li>
         );
       })}
