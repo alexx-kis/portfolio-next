@@ -9,15 +9,16 @@
   position: relative;
   cursor: pointer;
 
+  @media (max-width: $MOBILE) {
+    width: auto;
+    margin: 0 auto;
+  }
+
   &:hover {
     .header-lang__dropdown {
       visibility: visible;
       opacity: 1;
     }
-  }
-
-  @media (max-width: $MOBILE) {
-    margin: 0 auto;
   }
 
   &__selected {
@@ -26,11 +27,15 @@
   }
 
   &__icon {
-    margin-right: 10px;
-    @include square(const(20px));
-    border-radius: 50%;
-    overflow: clip;
     flex-shrink: 0;
+    margin-right: 10px;
+    overflow: clip;
+    border-radius: 50%;
+    @include square(desk(28px, 20px));
+
+    @media (max-width: $MOBILE) {
+      @include square(mob(40px, 32px));
+    }
 
     img {
       width: 100%;
@@ -41,6 +46,10 @@
   &__name {
     color: #fff;
     font-size: const(14px);
+
+    @media (max-width: $MOBILE) {
+      font-size: mob(28px, 22px);
+    }
   }
 
   &__dropdown {
@@ -55,8 +64,8 @@
     transition: all .3s;
 
     @media (max-width: $MOBILE) {
-      background: transparent;
       margin-inline: auto;
+      background: transparent;
     }
   }
 
