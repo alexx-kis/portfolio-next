@@ -16,7 +16,12 @@ function HeaderSocials(): React.JSX.Element {
                 className='header-socials__link'
                 aria-label={label}
               >
-                <Icon className='header-socials__link' path={icon} width={10} height={10} />
+                <Icon
+                  className='header-socials__link'
+                  src={icon}
+                  width={10}
+                  height={10}
+                />
               </a>
             </li>
           );

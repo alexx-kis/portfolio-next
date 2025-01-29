@@ -21,7 +21,7 @@ function MainButton(mainButtonProps: MainButtonProps): React.JSX.Element {
       </div>
       <Icon
         className='main-button__icon'
-        path={iconPath}
+        src={iconPath}
         width={10}
         height={10}
       />

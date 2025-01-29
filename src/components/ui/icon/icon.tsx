@@ -5,13 +5,13 @@ import './icon.scss';
 // ^======================== Icon ========================^ //
 
 type IconProps = {
-  path: string;
+  src: string;
   width: number;
   height: number;
   className?: string;
 };
 
-function Icon({ path, width, height, className }: IconProps): React.JSX.Element {
+function Icon({ src, width, height, className }: IconProps): React.JSX.Element {
   const imgRef = useRef<HTMLImageElement | null>(null);
 
   useEffect(() => {
@@ -19,13 +19,13 @@ function Icon({ path, width, height, className }: IconProps): React.JSX.Element 
 
     const replaceWithSvg = async () => {
       try {
-        const response = await fetch(path);
+        const response = await fetch(src);
         const data = await response.text();
         const parser = new DOMParser();
         const svg = parser.parseFromString(data, 'image/svg+xml').querySelector('svg');
 
         if (!svg) {
-          console.error(`No SVG found in ${path}`);
+          console.error(`No SVG found in ${src}`);
           return;
         }
 
@@ -46,9 +46,9 @@ function Icon({ path, width, height, className }: IconProps): React.JSX.Element 
     };
 
     replaceWithSvg();
-  }, [path, className]);
+  }, [src, className]);
 
-  return <Image ref={imgRef} src={path} alt='' width={width} height={height} />;
+  return <Image ref={imgRef} src={src} alt='' width={width} height={height} />;
 }
 
 export default Icon;

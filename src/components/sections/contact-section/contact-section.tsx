@@ -1,5 +1,6 @@
 'use-client';
 
+import Icon from '@/components/ui/icon/icon';
 import { CONTACTS } from '@/data/contacts';
 import { useContactAnimation } from '@/hooks/animation/use-contact-animation';
 import Image from 'next/image';
@@ -21,10 +22,9 @@ function ContactSection(): React.JSX.Element {
               return (
                 <li key={text} className='contact__item'>
                   <a href={href} className='contact__link' target='_blank'>
-                    <Image
-                      className='contact__link-icon img-svg'
+                    <Icon
+                      className='contact__link-icon'
                       src={icon}
-                      alt=''
                       width={45}
                       height={45}
                     />
