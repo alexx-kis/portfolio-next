@@ -26,7 +26,7 @@ html {
   background-image: $mainGradient;
   margin-top: calc(-1 * const(4px));
   color: #fff;
-  box-shadow: 0 calc(-1 * desk(60px, 0)) desk(90px, 40px) const(60px) #1e3040;
+  box-shadow: 0 calc(-1 * desk(150px, 0)) desk(90px, 0) calc(-1 * const(30px)) #1e3040;
 
   position: relative;
   z-index: 1;

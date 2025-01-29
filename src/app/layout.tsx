@@ -1,3 +1,4 @@
+import Footer from '@/components/layout/footer/footer';
 import Header from '@/components/layout/header/header';
 import Preloader from '@/components/preloader/preloader';
 import '@/styles/index.scss';
@@ -27,6 +28,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <div className='wrapper'>
           <Header />
           {children}
+          <Footer />
         </div>
       </body>
     </html>

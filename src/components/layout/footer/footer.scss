@@ -1,8 +1,11 @@
 @use '@/styles/abstracts' as *;
 
-/*@ // @======================== contact-section ========================@ // @*/
+/*$ // $======================== footer ========================$ // $*/
 
-.contact {
+.footer {
+  padding-top: const(40px);
+  padding-bottom: const(60px);
+  background-image: $blueGradient;
 
   &__heading {
     margin-bottom: const(30px);
@@ -51,7 +54,7 @@
     display: flex;
     align-items: center;
     gap: desk(10px, 8px);
-    font-size: desk(16px, 14px);
+    font-size: desk(20px, 14px);
     transition: all 250ms;
     color: inherit;
   }
