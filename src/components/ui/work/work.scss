@@ -10,19 +10,23 @@
   background-color: $gray;
   transition: all 250ms;
 
-  @media (hover:hover) {
-    &:hover {
-      box-shadow: 0 0 const(10px) const(4px) #e5e5e544;
-    }
-  }
 
   @media (max-width: $MOBILE) {
     flex-shrink: 0;
     width: 100vw;
     padding-inline: 20px;
-    box-shadow: none;
     background-color: transparent;
     scroll-snap-align: start;
+  }
+
+  @media (hover:hover) {
+    &:hover {
+      box-shadow: 0 0 const(10px) const(4px) #e5e5e544;
+    }
+
+    @media (max-width: $MOBILE) {
+      box-shadow: none;
+    }
   }
 
   &__link {

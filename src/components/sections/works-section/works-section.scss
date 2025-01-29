@@ -20,7 +20,7 @@
   &__list {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: desk(14px, 10px);
+    gap: const(14px);
     justify-items: center;
     margin-bottom: desk(40px, 32px);
 
