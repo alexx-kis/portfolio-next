@@ -9,10 +9,6 @@
   background-image: $blueGradient;
   height: const(50px);
 
-  @media (max-width: $MOBILE) {
-    background: transparent;
-  }
-
   &_loaded {
     opacity: 1;
     transform: translate(0, 0);

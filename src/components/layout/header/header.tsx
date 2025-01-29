@@ -1,7 +1,8 @@
 'use client';
 import { MediaQuery } from '@/constants/viewport';
 import { useMediaQuery } from '@/hooks/use-media-query';
-import { useState } from 'react';
+import { isEscapeKey } from '@/utils/utils';
+import React, { useEffect, useState } from 'react';
 import Burger from '../burger/burger';
 import HeaderInner from '../header-inner/header-inner';
 import './header.scss';
@@ -15,6 +16,20 @@ function Header(): React.JSX.Element {
   const onBurgerClick = () => {
     setIsInnerOpen(!isInnerOpen);
   };
+
+  useEffect(() => {
+    const handleKeyDown = (evt: KeyboardEvent) => {
+      if (isEscapeKey(evt)) {
+        setIsInnerOpen(false);
+      }
+    };
+
+    document.addEventListener('keydown', handleKeyDown);
+
+    return () => {
+      document.removeEventListener('keydown', handleKeyDown);
+    };
+  }, []);
 
   return (
     <header className='header'>
