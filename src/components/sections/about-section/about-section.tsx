@@ -28,7 +28,7 @@ function AboutSection(): React.JSX.Element {
   };
 
   useEffect(() => {
-    if (window.innerWidth >= ViewportWidth.MOBILE) {
+    if (window.innerWidth > ViewportWidth.MOBILE) {
       adjustElementHeight(headingsRef.current, imageWrapperRef.current);
       window.addEventListener('resize', () => {
         adjustElementHeight(headingsRef.current, imageWrapperRef.current);
