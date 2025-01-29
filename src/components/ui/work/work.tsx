@@ -1,3 +1,5 @@
+'use client'
+
 import { MediaQuery } from '@/constants/viewport';
 import { useMediaQuery } from '@/hooks/use-media-query';
 import Image from 'next/image';
@@ -5,6 +7,7 @@ import { useState } from 'react';
 import './work.scss';
 
 // ^======================== Work ========================^ //
+
 type WorkProps = {
   className: string;
   href: string;
@@ -34,13 +37,13 @@ function Work(workProps: WorkProps): React.JSX.Element {
     >
       <a href={href} className='work__link' aria-label={label}>
         <div className='work__image-box'>
-        <Image
-          className='work__image'
-          src={!isMobileScreen ? (isHovered ? gifSrc : imgSrc) : gifMobSrc}
-          alt=''
-          width={417}
-          height={234}
-        />
+          <Image
+            className='work__image'
+            src={!isMobileScreen ? (isHovered ? gifSrc : imgSrc) : gifMobSrc}
+            alt=''
+            width={417}
+            height={234}
+          />
         </div>
         <div className='work__info'>
           <p className='work__title'>

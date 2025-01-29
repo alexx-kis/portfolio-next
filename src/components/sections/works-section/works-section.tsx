@@ -1,5 +1,5 @@
+import WorksList from '@/components/layout/works-list/works-list';
 import MainButton from '@/components/ui/main-button/main-button';
-import Work from '@/components/ui/work/work';
 import { AppRoute, basePath } from '@/constants/const';
 import { WORKS } from '@/data/works';
 import './works-section.scss';
@@ -15,24 +15,7 @@ function WorksSection(): React.JSX.Element {
       <div className='container'>
         <div className='works__inner'>
           <h2 className='works__heading heading'>My works</h2>
-          <ul className='works__list'>
-            {worksList.map(({ href, label, title, desc, technologies, imgSrc, gifSrc, gifMobSrc }) => {
-              return (
-                <Work
-                  className={'works__item'}
-                  key={label}
-                  href={href}
-                  label={label}
-                  title={title}
-                  desc={desc}
-                  technologies={technologies}
-                  imgSrc={imgSrc}
-                  gifSrc={gifSrc}
-                  gifMobSrc={gifMobSrc}
-                />
-              );
-            })}
-          </ul>
+          <WorksList worksList={worksList} />
           <MainButton
             bemClassName='works__button'
             href={AppRoute.Works}

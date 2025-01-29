@@ -18,28 +18,7 @@
   }
 
   &__list {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: const(14px);
-    justify-items: center;
-    margin-bottom: desk(40px, 32px);
-
-    @media (max-width: $LAPTOP) {
-      grid-template-columns: repeat(2, 1fr);
-    }
-
-    @media (max-width: $MOBILE) {
-      display: flex;
-      width: 100vw;
-      margin-inline: 0;
-      position: relative;
-      left: calc(-1 * mob(23px, 16px));
-      overflow: auto;
-      justify-items: start;
-      scroll-snap-type: x mandatory;
-      @include hide-scrollbar;
-      height: calc(100dvh - mob(350px, 150px));
-    }
+   
   }
 
   &__button {

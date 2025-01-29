@@ -1,6 +1,7 @@
 import { basePath } from '@/constants/const';
+import { WorkType } from '@/types/types';
 
-export const WORKS = [
+export const WORKS: WorkType[] = [
   {
     href: 'https://alexx-kis.github.io/cloudbudget/',
     label: 'cloudbudget',

@@ -8,3 +8,14 @@ export type SkillItemType = {
   skillIcon: string,
   skillDescription?: string;
 };
+
+export type WorkType = {
+  href: string;
+  label: string;
+  title: string;
+  desc: string;
+  technologies: string[];
+  imgSrc: string;
+  gifSrc: string;
+  gifMobSrc: string;
+};
