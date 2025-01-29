@@ -6,13 +6,13 @@
   width: 100%;
   height: 100%;
   padding: const(14px);
-  box-shadow: 0 0 const(30px) const(2px) #e5e5e55e;
-  background-color: #363d44aa;
+  background-color: $gray;
+  box-shadow: $boxShadow;
   transition: all 250ms;
 
   @media (hover:hover) {
     &:hover {
-      box-shadow: 0 0 const(40px) const(8px) #e5e5e58c;
+      box-shadow: 0 0 const(10px) const(4px) #e5e5e544;
     }
   }
 
@@ -45,7 +45,6 @@
     aspect-ratio: 16 / 9;
     margin-bottom: desk(14px, 10px);
     overflow: clip;
-    // border-radius: const(14px);
     object-fit: cover;
     transition: all .3s;
   }
@@ -54,11 +53,11 @@
     flex-grow: 1;
     display: flex;
     flex-direction: column;
+    gap: const(20px);
     padding-inline: const(10px);
   }
 
   &__title {
-    margin-bottom: const(10px);
     font-size: desk(24px, 20px);
 
     @media (max-width: $TABLET) {
@@ -67,7 +66,6 @@
   }
 
   &__desc {
-    margin-bottom: const(10px);
     font-size: desk(18px, 16px);
     line-height: 1.4;
 

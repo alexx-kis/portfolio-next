@@ -44,13 +44,9 @@ section {
   height: 100%;
 
   margin-inline: auto;
-  padding-inline: desk(62px, 40px);
+  padding-inline: desk(40px, 32px);
 
   @include TABLET {
-    padding-inline: tab(40px, 16px);
-  }
-
-  @include MOBILE {
-    padding-inline: mob(16px * $mobAsp, 16px);
+    padding-inline: tab(32px, 16px);
   }
 }

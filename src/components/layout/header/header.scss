@@ -6,7 +6,7 @@
   width: 100%;
   position: fixed;
   z-index: 2;
-  background-image: linear-gradient(to left, #1e6372, #2f96b0);
+  background-image: $blueGradient;
   height: const(50px);
 
   @media (max-width: $MOBILE) {

@@ -38,10 +38,10 @@
 
     @media (hover:hover) {
       &:hover {
-        color: $hover-color;
+        color: $hoverColor;
 
         svg path {
-          fill: $hover-color;
+          fill: $hoverColor;
         }
       }
     }
