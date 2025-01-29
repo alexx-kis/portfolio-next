@@ -59,6 +59,7 @@
 
   &__title {
     font-size: desk(24px, 20px);
+    font-weight: 700;
 
     @media (max-width: $TABLET) {
       font-size: tab(20px, 18px);

@@ -2,7 +2,7 @@ import { basePath } from '@/constants/const';
 
 export const CONTACTS = [
   {
-    href: '#!',
+    href: '',
     icon: `${basePath}/img/icons/location-icon.svg`,
     text: 'Russia, St. Petersburg'
   },
