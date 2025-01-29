@@ -21,6 +21,8 @@
     width: 100vw;
     padding-inline: 20px;
     scroll-snap-align: start;
+    background-color: transparent;
+    box-shadow: none;
   }
 
   &__link {
@@ -30,12 +32,16 @@
     height: 100%;
     color: inherit;
 
-    @include MOBILE {
+    @media (max-width: $MOBILE) {
       width: auto;
       height: 100%;
       overflow: clip;
       border-radius: inherit;
       box-shadow: none;
+      background-color: $gray;
+      padding: 10px;
+      box-shadow: $boxShadow;
+
     }
   }
 
@@ -47,6 +53,9 @@
     overflow: clip;
     object-fit: cover;
     transition: all .3s;
+    @media (max-width: $MOBILE) {
+      aspect-ratio: 9 / 16;
+    }
   }
 
   &__info {

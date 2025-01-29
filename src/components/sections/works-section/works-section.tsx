@@ -1,8 +1,8 @@
 import MainButton from '@/components/ui/main-button/main-button';
 import Work from '@/components/ui/work/work';
+import { AppRoute, basePath } from '@/constants/const';
 import { WORKS } from '@/data/works';
 import './works-section.scss';
-import { AppRoute, basePath } from '@/constants/const';
 
 // @======================== WorksSection ========================@ //
 
