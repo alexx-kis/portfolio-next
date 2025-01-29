@@ -5,6 +5,7 @@ import MainButton from '@/components/ui/main-button/main-button';
 import { AppRoute, basePath } from '@/constants/const';
 import { ViewportWidth } from '@/constants/viewport';
 import { aboutSectionText } from '@/data/about';
+import { SKILLS_CONCISE } from '@/data/skills';
 import { splitTextToParagraphs } from '@/utils/utils';
 import Image from 'next/image';
 import { useEffect, useRef } from 'react';
@@ -62,7 +63,7 @@ function AboutSection(): React.JSX.Element {
               </p>
             ))}
           </div>
-          <Skills />
+          <Skills data={SKILLS_CONCISE} />
           <MainButton
             bemClassName='about__button'
             href={AppRoute.About}

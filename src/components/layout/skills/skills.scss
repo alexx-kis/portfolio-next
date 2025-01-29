@@ -19,13 +19,6 @@
     gap: desk(20px, 16px);
   }
 
-  &__title {
-    margin-bottom: 1.8dvh;
-    font-family: druk;
-    font-size: 1.8dvh;
-    transform: translate(-100px, 0%);
-  }
-
   &__group {
     display: flex;
     align-items: center;
@@ -56,6 +49,29 @@
 
     @media (max-width: $TABLET) {
       gap: tab(16px, 12px);
+    }
+  }
+
+  &._expanded {
+
+    .skills {
+      &__container {
+        gap: desk(40px, 40px);
+      }
+
+      &__group {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      &__group-title {
+        font-size: desk(24px, 20px);
+      }
+
+      &__list {
+        flex-direction: column;
+      }
+
     }
   }
 }

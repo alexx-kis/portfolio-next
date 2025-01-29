@@ -2,20 +2,52 @@
 
 /*^ //^======================== skill ========================^// ^*/
 .skill {
-  display: flex;
-  align-items: center;
-  gap: const(10px);
-  padding-inline: desk(14px, 12px);
-  padding-block: desk(8px, 6px);
-  // border-radius: desk(14px, 12px);
-  box-shadow: $boxShadow;
-  background-color: $gray;
-  letter-spacing: 0.8;
+  &__inner {
+    display: flex;
+    align-items: center;
+    gap: const(10px);
+    padding-inline: desk(14px, 12px);
+    padding-block: desk(8px, 6px);
+    box-shadow: $boxShadow;
+    background-color: $grayTransparent;
+    letter-spacing: 0.8;
+    position: relative;
+    backdrop-filter: blur(max(0.417vw, 6px));
+    transition: all 250ms;
 
-  @media (max-width: $TABLET) {
-    height: tab(34px, 32px);
-    padding-inline: tab(12px, 10px);
-    border-radius: tab(16px, 12px);
+    @media (max-width: $TABLET) {
+      height: tab(34px, 32px);
+      padding-inline: tab(12px, 10px);
+      border-radius: tab(16px, 12px);
+    }
+  }
+
+  &__description {
+    font-size: desk(16px, 14px);
+  }
+
+  &._expanded {
+    display: flex;
+    align-items: center;
+    gap: const(20px);
+
+    .skill {
+      &__inner {
+        width: desk(320px, 320px);
+      }
+
+      &__icon {
+        @include square(desk(36px, 24px));
+      }
+
+      &__name {
+        font-size: desk(18px, 16px);
+
+        @media (max-width: $TABLET) {
+          font-size: tab(18px, 14px);
+        }
+      }
+    }
   }
 
   &__icon {
