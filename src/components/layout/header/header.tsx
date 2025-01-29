@@ -1,5 +1,5 @@
 'use client';
-import { ViewportWidth } from '@/constants/viewport';
+import { MediaQuery } from '@/constants/viewport';
 import { useMediaQuery } from '@/hooks/use-media-query';
 import { useState } from 'react';
 import Burger from '../burger/burger';
@@ -10,7 +10,7 @@ import './header.scss';
 
 function Header(): React.JSX.Element {
   const [isInnerOpen, setIsInnerOpen] = useState(false);
-  const isMobileScreen = useMediaQuery(ViewportWidth.MOBILE);
+  const isMobileScreen = useMediaQuery(MediaQuery.MOBILE);
 
   const onBurgerClick = () => {
     setIsInnerOpen(!isInnerOpen);

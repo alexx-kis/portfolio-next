@@ -1,4 +1,4 @@
-import { ViewportWidth } from '@/constants/viewport';
+import { MediaQuery } from '@/constants/viewport';
 import { useMediaQuery } from '@/hooks/use-media-query';
 import Image from 'next/image';
 import { useState } from 'react';
@@ -20,7 +20,7 @@ type WorkProps = {
 function Work(workProps: WorkProps): React.JSX.Element {
   const { className, href, label, title, desc, technologies, imgSrc, gifSrc, gifMobSrc } = workProps;
   const [isHovered, setIsHovered] = useState(false);
-  const isMobileScreen = useMediaQuery(ViewportWidth.MOBILE);
+  const isMobileScreen = useMediaQuery(MediaQuery.MOBILE);
 
   return (
     <li

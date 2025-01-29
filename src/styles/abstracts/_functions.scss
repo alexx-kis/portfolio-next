@@ -69,8 +69,8 @@
 // %------------ adapt to custom vw and vh ------------% //
 @function vwhm($initialValue, $minWidth, $minHeight, $viewportWidth, $viewportHeight) {
 
-  $adaptedToCustomViewportWidth: vwm($initialValue, $minWidth, $viewportWidth);
+  $adaptedToCustomMediaQuery: vwm($initialValue, $minWidth, $viewportWidth);
   $adaptedToCustomViewportHeight: vhm($initialValue, $minHeight, $viewportHeight);
 
-  @return min($adaptedToCustomViewportWidth, $adaptedToCustomViewportHeight);
+  @return min($adaptedToCustomMediaQuery, $adaptedToCustomViewportHeight);
 }

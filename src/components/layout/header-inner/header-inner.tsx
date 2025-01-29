@@ -1,5 +1,5 @@
 // import { MOBILE } from '@/constants/viewport';
-import { ViewportWidth } from '@/constants/viewport';
+import { MediaQuery } from '@/constants/viewport';
 import { useMediaQuery } from '@/hooks/use-media-query';
 import clsx from 'clsx';
 import HeaderLang from '../header-lang/header-lang';
@@ -14,7 +14,7 @@ type HeaderInnerProps = {
 
 function HeaderInner(headerInnerProps: HeaderInnerProps): React.JSX.Element {
   const { isOpen } = headerInnerProps;
-  const isMobileScreen = useMediaQuery(ViewportWidth.MOBILE);
+  const isMobileScreen = useMediaQuery(MediaQuery.MOBILE);
 
   return (
     <div

@@ -30,7 +30,7 @@ export const useHeroAnimation = () => {
       .from('.hero__text', {
         xPercent: -100,
       })
-      .from('.hero__button', {
+      .from('.hero__button-box', {
         xPercent: -100,
       })
       .from('.header', {

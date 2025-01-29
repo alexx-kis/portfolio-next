@@ -1,36 +1,57 @@
 'use client';
 
-import { splitTextToParagraphs } from '@/utils/utils';
 import Skills from '@/components/layout/skills/skills';
 import MainButton from '@/components/ui/main-button/main-button';
 import { AppRoute, basePath } from '@/constants/const';
+import { ViewportWidth } from '@/constants/viewport';
 import { aboutSectionText } from '@/data/about';
+import { splitTextToParagraphs } from '@/utils/utils';
 import Image from 'next/image';
+import { useEffect, useRef } from 'react';
 import './about-section.scss';
 
 // @======================== AboutSection ========================@ //
 
+type Element = HTMLDivElement | null;
+
 function AboutSection(): React.JSX.Element {
 
-  // useAboutAnimation();
+  const imageWrapperRef = useRef<Element>(null);
+  const headingsRef = useRef<Element>(null);
+
+  const adjustElementHeight = (reference: Element, element: Element) => {
+    if (reference && element) {
+      element.style.height = '0px';
+      element.style.height = `${reference.clientHeight}px`;
+    }
+  };
+
+  useEffect(() => {
+    if (window.innerWidth >= ViewportWidth.MOBILE) {
+      adjustElementHeight(headingsRef.current, imageWrapperRef.current);
+      window.addEventListener('resize', () => {
+        adjustElementHeight(headingsRef.current, imageWrapperRef.current);
+      });
+    }
+  },);
 
   return (
     <section className='main__about about' id='about'>
       <div className='container'>
         <div className='about__inner'>
           <div className='about__header'>
-            <div className='about__headings'>
+            <div className='about__headings' ref={headingsRef}>
               <h2 className='about__heading heading'>Hi!</h2>
               <h2 className='about__heading heading'>
                 My name is Alex and I am a frontend developer
               </h2>
             </div>
-            <div className='about__image'>
+            <div className='about__image-wrapper' ref={imageWrapperRef}>
               <Image
-                src={`${basePath}/img/avatar-small.png`}
+                src={`${basePath}/img/avatar-big.png`}
                 alt=''
-                width={400}
-                height={400}
+                width={1}
+                height={1}
               />
             </div>
           </div>
