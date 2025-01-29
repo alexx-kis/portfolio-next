@@ -7,9 +7,9 @@
   gap: const(10px);
   padding-inline: desk(14px, 12px);
   padding-block: desk(8px, 6px);
-  border-radius: desk(14px, 12px);
-  box-shadow: 0 0 const(5px) 0 #ffffff6e;
-  background-color: #32343544;
+  // border-radius: desk(14px, 12px);
+  box-shadow: 0 0 const(3px) 0 #ffffff6e;
+  background-color: #363d44aa;
   letter-spacing: 0.8;
 
   @media (max-width: $TABLET) {

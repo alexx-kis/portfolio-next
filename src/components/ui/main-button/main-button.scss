@@ -8,7 +8,7 @@
   gap: const(8px);
   padding-inline: const(20px);
   padding-block: const(14px);
-  border-radius: const(12px);
+  // border-radius: const(12px);
   background: linear-gradient(to left, #1e6372, #2f96b0);
   color: #fff;
   font-size: const(20px);
@@ -19,7 +19,7 @@
 
   &__icon {
     width: desk(20px, 14px);
-    translate: 0 desk(2px, 2px);
+    translate: 0 desk(1px, 1px);
 
     path {
       fill: #fff;
