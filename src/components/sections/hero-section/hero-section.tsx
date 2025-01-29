@@ -8,7 +8,7 @@ import './hero-section.scss';
 // @======================== HeroSection ========================@ //
 
 function HeroSection(): React.JSX.Element {
-  useHeroAnimation();
+  // useHeroAnimation();
   return (
     <section
       className='main__hero hero scroll'

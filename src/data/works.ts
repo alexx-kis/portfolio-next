@@ -4,6 +4,9 @@ export const WORKS = [
   {
     href: 'https://alexx-kis.github.io/cloudbudget/',
     label: 'cloudbudget',
+    title: 'Cloudbudget',
+    desc: 'A website about budget management software',
+    technologies: ['HTML', 'SCSS', 'JS'],
     imgSrc: `${basePath}/img/works/cloudbudget.png`,
     gifSrc: `${basePath}/img/works/cloudbudget.gif`,
     gifMobSrc: `${basePath}/img/works/cloudbudget-mob.gif`,
@@ -11,6 +14,9 @@ export const WORKS = [
   {
     href: 'https://alexx-kis.github.io/Lemon/',
     label: 'lemon',
+    title: 'Lemon',
+    desc: 'A website about recipes',
+    technologies: ['HTML', 'SCSS', 'JS'],
     imgSrc: `${basePath}/img/works/lemon.png`,
     gifSrc: `${basePath}/img/works/lemon.gif`,
     gifMobSrc: `${basePath}/img/works/lemon-mob.gif`,
@@ -18,6 +24,9 @@ export const WORKS = [
   {
     href: 'https://alexx-kis.github.io/Binary/',
     label: 'binary',
+    title: 'Binary',
+    desc: '',
+    technologies: ['HTML', 'SCSS', 'JS'],
     imgSrc: `${basePath}/img/works/binary.png`,
     gifSrc: `${basePath}/img/works/binary.gif`,
     gifMobSrc: `${basePath}/img/works/binary-mob.gif`,
@@ -25,6 +34,9 @@ export const WORKS = [
   {
     href: 'https://alexx-kis.github.io/Mammut/',
     label: 'mammut',
+    title: 'Mammut',
+    desc: 'Internet shop',
+    technologies: ['HTML', 'SCSS', 'JS'],
     imgSrc: `${basePath}/img/works/mammut.png`,
     gifSrc: `${basePath}/img/works/mammut.gif`,
     gifMobSrc: `${basePath}/img/works/mammut-mob.gif`,
@@ -32,6 +44,9 @@ export const WORKS = [
   {
     href: 'https://alexx-kis.github.io/finsweet/',
     label: 'finswet',
+    title: 'Finswet',
+    desc: '',
+    technologies: ['HTML', 'SCSS', 'JS'],
     imgSrc: `${basePath}/img/works/finesweet.png`,
     gifSrc: `${basePath}/img/works/finesweet.gif`,
     gifMobSrc: `${basePath}/img/works/finesweet-mob.gif`,
@@ -39,6 +54,9 @@ export const WORKS = [
   {
     href: 'https://alexx-kis.github.io/domiktut/',
     label: 'domiktut',
+    title: 'Domiktut',
+    desc: '',
+    technologies: ['HTML', 'SCSS', 'JS'],
     imgSrc: `${basePath}/img/works/domiktut.png`,
     gifSrc: `${basePath}/img/works/domiktut.gif`,
     gifMobSrc: `${basePath}/img/works/domiktut-mob.gif`,
@@ -46,6 +64,9 @@ export const WORKS = [
   {
     href: 'https://alexx-kis.github.io/Free-Business-Theme/',
     label: 'free-business',
+    title: 'Free-business',
+    desc: '',
+    technologies: ['HTML', 'SCSS', 'JS'],
     imgSrc: `${basePath}/img/works/free-business-theme.png`,
     gifSrc: `${basePath}/img/works/free-business-theme.gif`,
     gifMobSrc: `${basePath}/img/works/free-business-theme-mob.gif`,
@@ -53,6 +74,9 @@ export const WORKS = [
   {
     href: 'https://alexx-kis.github.io/Delivery-Website/',
     label: 'delivery',
+    title: 'Delivery',
+    desc: '',
+    technologies: ['HTML', 'SCSS', 'JS'],
     imgSrc: `${basePath}/img/works/dhl.png`,
     gifSrc: `${basePath}/img/works/dhl.gif`,
     gifMobSrc: `${basePath}/img/works/dhl-mob.gif`,
@@ -60,6 +84,9 @@ export const WORKS = [
   {
     href: 'https://alexx-kis.github.io/IT-studio/',
     label: 'it-studio',
+    title: 'IT-studio',
+    desc: '',
+    technologies: ['HTML', 'SCSS', 'JS'],
     imgSrc: `${basePath}/img/works/it-studio.png`,
     gifSrc: `${basePath}/img/works/it-studio.gif`,
     gifMobSrc: `${basePath}/img/works/it-studio-mob.gif`,
@@ -67,6 +94,9 @@ export const WORKS = [
   {
     href: 'https://alexx-kis.github.io/CoinBase/',
     label: 'coinbase',
+    title: 'Coinbase',
+    desc: '',
+    technologies: ['HTML', 'SCSS', 'JS'],
     imgSrc: `${basePath}/img/works/coinbase.png`,
     gifSrc: `${basePath}/img/works/coinbase.gif`,
     gifMobSrc: `${basePath}/img/works/coinbase-mob.gif`,
@@ -74,6 +104,9 @@ export const WORKS = [
   {
     href: 'https://alexx-kis.github.io/Web-Development-Project/',
     label: 'web-development',
+    title: 'Web-development',
+    desc: '',
+    technologies: ['HTML', 'SCSS', 'JS'],
     imgSrc: `${basePath}/img/works/web-dev.png`,
     gifSrc: `${basePath}/img/works/web-dev.gif`,
     gifMobSrc: `${basePath}/img/works/web-dev-mob.gif`,
@@ -81,6 +114,9 @@ export const WORKS = [
   {
     href: 'https://alexx-kis.github.io/Vladimirskij-Standart/',
     label: 'vladimirskij-standart',
+    title: 'Vladimirskij-standart',
+    desc: '',
+    technologies: ['HTML', 'SCSS', 'JS'],
     imgSrc: `${basePath}/img/works/vs.png`,
     gifSrc: `${basePath}/img/works/vs.gif`,
     gifMobSrc: `${basePath}/img/works/vs-mob.gif`,

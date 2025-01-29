@@ -20,6 +20,7 @@ export default function Skills() {
                 {skillsItems.map(({ skillIcon, skillName }, index) => {
                   return (
                     <Skill
+                      bemClassName='skills__list-item'
                       key={index}
                       skillIcon={skillIcon}
                       skillName={skillName}

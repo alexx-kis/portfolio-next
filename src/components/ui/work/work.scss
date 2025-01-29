@@ -5,9 +5,16 @@
 .work {
   width: 100%;
   height: 100%;
-  overflow: hidden;
-  border-radius: 2dvh;
-  background-color: transparent;
+  padding: const(14px);
+  box-shadow: 0 0 const(50px) const(1px) #e5e5e55e;
+  background-color: #363d44;
+  transition: all 250ms;
+
+  @media (hover:hover) {
+    &:hover {
+      box-shadow: 0 0 const(50px) const(10px) #e5e5e58c;
+    }
+  }
 
   @media (max-width: $MOBILE) {
     flex-shrink: 0;
@@ -19,25 +26,66 @@
   &__link {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    box-shadow: 0 0 201px #e5e5e5;
+    width: 100%;
+    height: 100%;
+    color: inherit;
 
     @include MOBILE {
+      width: auto;
+      height: 100%;
       overflow: clip;
       border-radius: inherit;
       box-shadow: none;
-      height: 100%;
-      width: auto;
     }
   }
 
   &__image {
     width: 100%;
-    height: 100%;
-    border-radius: 20px;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    margin-bottom: desk(14px, 10px);
+    overflow: clip;
+    // border-radius: const(14px);
     object-fit: cover;
     transition: all .3s;
+  }
+
+  &__info {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    padding-inline: const(10px);
+  }
+
+  &__title {
+    margin-bottom: const(10px);
+    font-size: desk(24px, 20px);
+
+    @media (max-width: $TABLET) {
+      font-size: tab(20px, 18px);
+    }
+  }
+
+  &__desc {
+    margin-bottom: const(10px);
+    font-size: desk(18px, 16px);
+    line-height: 1.4;
+
+    @media (max-width: $TABLET) {
+      font-size: tab(16px, 14px);
+    }
+  }
+
+  &__technologies {
+    display: flex;
+    gap: const(4px);
+    margin-top: auto;
+  }
+
+  &__technology {
+    padding-inline: const(8px);
+    padding-block: const(4px);
+    border: const(1px) solid #fff;
+    font-size: const(14px);
   }
 }

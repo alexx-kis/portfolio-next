@@ -4,5 +4,6 @@ export const basePath = process.env.NODE_ENV === 'production'
 
 export enum AppRoute {
   Main = '/',
-  About = '/about'
+  About = '/about',
+  Works = '/works'
 }

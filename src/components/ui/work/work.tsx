@@ -9,13 +9,16 @@ type WorkProps = {
   className: string;
   href: string;
   label: string;
+  title: string;
+  desc: string;
+  technologies: string[],
   imgSrc: string;
   gifSrc: string;
   gifMobSrc: string;
 };
 
 function Work(workProps: WorkProps): React.JSX.Element {
-  const { className, href, label, imgSrc, gifSrc, gifMobSrc } = workProps;
+  const { className, href, label, title, desc, technologies, imgSrc, gifSrc, gifMobSrc } = workProps;
   const [isHovered, setIsHovered] = useState(false);
   const isMobileScreen = useMediaQuery(ViewportWidth.MOBILE);
 
@@ -37,6 +40,21 @@ function Work(workProps: WorkProps): React.JSX.Element {
           width={417}
           height={234}
         />
+        <div className='work__info'>
+          <p className='work__title'>
+            {title}
+          </p>
+          <p className='work__desc'>
+            {desc}
+          </p>
+          <ul className='work__technologies'>
+            {technologies.map((item) => (
+              <li key={item} className='work__technology'>
+                {item}
+              </li>
+            ))}
+          </ul>
+        </div>
       </a>
     </li>
   );

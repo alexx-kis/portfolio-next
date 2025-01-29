@@ -19,13 +19,13 @@
 
   &__list {
     display: grid;
-    grid-template: repeat(4, 1fr) / repeat(3, 1fr);
-    gap: 3dvh;
-    margin-inline: auto;
+    grid-template-columns: repeat(4, 1fr);
+    gap: desk(14px, 10px);
     justify-items: center;
+    margin-bottom: desk(40px, 32px);
 
-    @media (max-width: $TABLET) {
-      grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+    @media (max-width: $LAPTOP) {
+      grid-template-columns: repeat(2, 1fr);
     }
 
     @media (max-width: $MOBILE) {
@@ -42,7 +42,7 @@
     }
   }
 
-  &__item {
-    aspect-ratio: 16 / 9;
+  &__button {
+    align-self: center;
   }
 }
