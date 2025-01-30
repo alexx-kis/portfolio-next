@@ -10,14 +10,13 @@ export const useHeroAnimation = () => {
   useGSAP(() => {
     const heroAnimation = gsap.timeline({
       defaults: {
-        opacity: 0,
+        // opacity: 0,
       },
     });
     heroAnimation
-      .to(
+      .from(
         'body',
         {
-          opacity: 1,
           function() {
             document.body.classList.add('no-scroll');
           },
@@ -26,20 +25,22 @@ export const useHeroAnimation = () => {
       )
       .from('.hero__heading', {
         xPercent: -100,
+        opacity: 0,
       })
       .from('.hero__text', {
         xPercent: -100,
+        opacity: 0,
       })
       .from('.hero__button-box', {
         xPercent: -100,
+        opacity: 0,
       })
       .from('.header', {
         yPercent: -100,
       })
-      .to(
+      .from(
         'body',
         {
-          opacity: 1,
           onComplete: () => {
             document.body.classList.remove('no-scroll');
             initializeHeroScrollAnimation();
