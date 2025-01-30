@@ -6,6 +6,7 @@ import { AppRoute, basePath } from '@/constants/const';
 import { ViewportWidth } from '@/constants/viewport';
 import { aboutSectionText } from '@/data/about';
 import { SKILLS_CONCISE } from '@/data/skills';
+import { useAboutAnimation } from '@/hooks/animation/use-about-animation';
 import { useTransitionLink } from '@/hooks/use-transition-link';
 import { splitTextToParagraphs } from '@/utils/utils';
 import Image from 'next/image';
@@ -17,6 +18,7 @@ import './about-section.scss';
 type Element = HTMLDivElement | null;
 
 function AboutSection(): React.JSX.Element {
+  useAboutAnimation();
 
   const imageWrapperRef = useRef<Element>(null);
   const headingsRef = useRef<Element>(null);

@@ -6,20 +6,17 @@ gsap.registerPlugin(useGSAP);
 
 // %======================== useAboutAnimation ========================% //
 
-
 export const useAboutAnimation = (() => {
-  const windowHeight = window.innerHeight;
-
   useGSAP(() => {
 
     gsap.timeline({
       defaults: {
         opacity: 0,
-        y: -0.25 * windowHeight,
+        yPercent: -50,
       },
       scrollTrigger: {
         trigger: '.about',
-        markers: false,
+        markers: true,
         start: '50% 50%',
         end: '100% 0%',
         scrub: 1,
@@ -27,18 +24,19 @@ export const useAboutAnimation = (() => {
     })
       .to('.about__headings', {
       }, '<')
-      .to('.about__image', {
+      .to('.about__image-wrapper', {
       }, '<')
       .to('.about__info', {
       }, '<')
-      .to('.about__button', {
-      }, '<')
       .to('.skills__heading', {
         yPercent: -50,
-      })
+      }, '<')
       .to('.skills__group', {
-        yPercent: -50,
+        yPercent: -100,
         stagger: 0.1,
-      }, '<');
+      }, '<')
+      .to('.about__button', {
+        delay: 0.5
+      }, '');
   });
 });
