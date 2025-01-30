@@ -27,4 +27,4 @@ export const HEADER_MENU_ITEMS = [
   },
 ];
 
-export const PAGE_TRANSITION_TIME = 125;
+export const PAGE_TRANSITION_TIME = 180;
