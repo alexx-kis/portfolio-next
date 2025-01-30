@@ -1,3 +1,4 @@
+import TransitionLink from '@/components/transition-link/transition-link';
 import { HEADER_MENU_ITEMS } from '@/constants/const';
 import { MediaQuery } from '@/constants/viewport';
 import { useMediaQuery } from '@/hooks/use-media-query';
@@ -11,7 +12,7 @@ import './header-inner.scss';
 // ^======================== HeaderInner ========================^ //
 type HeaderInnerProps = {
   isOpen: boolean;
-  onHeaderLinkClick: () => void;
+  onHeaderLinkClick: (e: React.MouseEvent<HTMLAnchorElement>) => void;
 };
 
 function HeaderInner(headerInnerProps: HeaderInnerProps): React.JSX.Element {
@@ -30,16 +31,31 @@ function HeaderInner(headerInnerProps: HeaderInnerProps): React.JSX.Element {
         {HEADER_MENU_ITEMS.map(({ link, name }, index) => {
           return (
             <li key={index} className='header-inner__menu-item'>
-              <Link
-                href={link}
-                className={clsx(
-                  'header-inner__menu-link',
-                  { '_active': pathname === link }
-                )}
-                onClick={onHeaderLinkClick}
-              >
-                {name}
-              </Link>
+              {
+                name === 'Contact' ? (
+                  <Link
+                    href={link}
+                    className={clsx(
+                      'header-inner__menu-link',
+                      { '_active': pathname === link }
+                    )}
+                    onClick={onHeaderLinkClick}
+                  >
+                    {name}
+                  </Link>
+                )
+                  :
+                  <TransitionLink
+                    href={link}
+                    className={clsx(
+                      'header-inner__menu-link',
+                      { '_active': pathname === link }
+                    )}
+                    onTransitionLinkClick={onHeaderLinkClick}
+                  >
+                    {name}
+                  </TransitionLink>
+              }
             </li>
           );
         })}

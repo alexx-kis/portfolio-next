@@ -26,3 +26,5 @@ export const HEADER_MENU_ITEMS = [
     name: 'Contact',
   },
 ];
+
+export const PAGE_TRANSITION_TIME = 125;
