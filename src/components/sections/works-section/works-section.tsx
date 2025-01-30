@@ -1,3 +1,5 @@
+'use client'
+
 import WorksList from '@/components/layout/works-list/works-list';
 import MainButton from '@/components/ui/main-button/main-button';
 import { AppRoute, basePath } from '@/constants/const';

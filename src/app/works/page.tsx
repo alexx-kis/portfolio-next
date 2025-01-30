@@ -1,8 +1,13 @@
 import Works from '@/components/layout/works-list/works-list';
 import { WORKS } from '@/data/works';
 import './works-page.scss';
+import { Metadata } from 'next';
 
 // #======================== WorksPage ========================# //
+
+export const metadata: Metadata = {
+  title: "Portfolio - Works",
+};
 
 function Page(): React.JSX.Element {
   return (

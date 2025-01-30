@@ -3,10 +3,15 @@ import { basePath } from '@/constants/const';
 import { aboutPageText } from '@/data/about';
 import { SKILLS_EXPANDED } from '@/data/skills';
 import { splitTextToParagraphs } from '@/utils/utils';
+import { Metadata } from 'next';
 import Image from 'next/image';
 import './about-page.scss';
 
 // #======================== AboutPage ========================# //
+
+export const metadata: Metadata = {
+  title: "Portfolio - About",
+};
 
 function Page(): React.JSX.Element {
   return (
