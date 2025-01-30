@@ -53,8 +53,12 @@
 
   &__image-box {
     margin-bottom: desk(14px, 10px);
+    aspect-ratio: 16 / 9;
+    overflow: clip;
+    width: 100%;
 
     @media (max-width: $MOBILE) {
+      aspect-ratio: unset;
       display: flex;
       justify-content: center;
       max-height: 72cqh;
@@ -65,6 +69,7 @@
 
   &__image {
     width: 100%;
+    height: auto;
     aspect-ratio: 16 / 9;
     overflow: clip;
     object-fit: cover;
