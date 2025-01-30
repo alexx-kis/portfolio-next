@@ -6,6 +6,7 @@ import { AppRoute, basePath } from '@/constants/const';
 import { ViewportWidth } from '@/constants/viewport';
 import { aboutSectionText } from '@/data/about';
 import { SKILLS_CONCISE } from '@/data/skills';
+import { useTransitionLink } from '@/hooks/use-transition-link';
 import { splitTextToParagraphs } from '@/utils/utils';
 import Image from 'next/image';
 import { useEffect, useRef } from 'react';
@@ -34,7 +35,9 @@ function AboutSection(): React.JSX.Element {
         adjustElementHeight(headingsRef.current, imageWrapperRef.current);
       });
     }
-  },);
+  });
+
+  const { handleTransition } = useTransitionLink();
 
   return (
     <section className='main__about about' id='about'>
@@ -69,6 +72,9 @@ function AboutSection(): React.JSX.Element {
             href={AppRoute.About}
             text='Learn more'
             iconPath={`${basePath}/img/icons/go-to-arrow.svg`}
+            onMainButtonClick={(e) => {
+              handleTransition(e, AppRoute.About);
+            }}
           />
         </div>
       </div>

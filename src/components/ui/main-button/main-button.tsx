@@ -8,13 +8,15 @@ type MainButtonProps = {
   href: string;
   text: string;
   iconPath: string;
+  onMainButtonClick?: (e: React.MouseEvent<HTMLAnchorElement>) => void;
 };
 function MainButton(mainButtonProps: MainButtonProps): React.JSX.Element {
-  const { bemClassName, href, text, iconPath } = mainButtonProps;
+  const { bemClassName, href, text, iconPath, onMainButtonClick } = mainButtonProps;
   return (
     <Link
       className={`${bemClassName} main-button`}
       href={href}
+      onClick={onMainButtonClick}
     >
       <div className='main-button__text'>
         {text}
