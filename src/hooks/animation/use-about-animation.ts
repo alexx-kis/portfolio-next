@@ -16,7 +16,7 @@ export const useAboutAnimation = (() => {
       },
       scrollTrigger: {
         trigger: '.about',
-        markers: true,
+        markers: false,
         start: '50% 50%',
         end: '100% 0%',
         scrub: 1,
