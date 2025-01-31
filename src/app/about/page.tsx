@@ -1,3 +1,4 @@
+import Certificates from '@/components/layout/certificates/certificates';
 import Skills from '@/components/layout/skills/skills';
 import { basePath } from '@/constants/const';
 import { aboutPageText } from '@/data/about';
@@ -38,7 +39,15 @@ function Page(): React.JSX.Element {
               ))}
             </div>
           </div>
-          <Skills data={SKILLS_EXPANDED} />
+
+          <section>
+            <Skills data={SKILLS_EXPANDED} />
+          </section>
+
+          <section>
+            <Certificates />
+          </section>
+
         </div>
       </section>
     </main>

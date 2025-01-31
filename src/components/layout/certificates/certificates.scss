@@ -1,0 +1,38 @@
+@use '@/styles/abstracts' as *;
+
+/*$ // $======================== certificates ========================$ // $*/
+
+.certificates {
+  &__heading {
+    margin-bottom: desk(32px, 28px);
+    text-align: left;
+
+    @media (max-width: $TABLET) {
+      margin-bottom: tab(28px, 20px);
+    }
+  }
+
+  &__list {
+    display: flex;
+    gap: desk(40px, 32px);
+
+    @media (max-width: $TABLET) {
+      flex-direction: column;
+    }
+  }
+
+  &__item {
+    @media (max-width: $TABLET) {
+      width: 400px;
+    }
+
+    @media (max-width: $MOBILE) {
+      width: 100%;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
