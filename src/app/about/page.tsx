@@ -19,35 +19,42 @@ function Page(): React.JSX.Element {
     <main>
       <section className='about-hero'>
         <div className='container'>
-          <h1 className='about-hero__heading heading _main'>
-            About me
-          </h1>
           <div className='about-hero__inner'>
-            <div className='about-hero__image-wrapper'>
-              <Image
-                src={`${basePath}/img/avatar-big.png`}
-                alt=''
-                width={1061}
-                height={1108}
-              />
-            </div>
-            <div className='about-hero__text-box'>
-              {splitTextToParagraphs(aboutPageText).map((paragraph) => (
-                <p key={paragraph} className='about-hero__text'>
-                  {paragraph}
-                </p>
-              ))}
+            <h1 className='about-hero__heading heading _main'>
+              About me
+            </h1>
+            <div className='about-hero__content'>
+              <div className='about-hero__image-wrapper'>
+                <Image
+                  src={`${basePath}/img/avatar-big.png`}
+                  alt=''
+                  width={1061}
+                  height={1108}
+                />
+              </div>
+              <div className='about-hero__text-box'>
+                {splitTextToParagraphs(aboutPageText).map((paragraph) => (
+                  <p key={paragraph} className='about-hero__text'>
+                    {paragraph}
+                  </p>
+                ))}
+              </div>
             </div>
           </div>
 
-          <section>
-            <Skills data={SKILLS_EXPANDED} />
-          </section>
 
-          <section>
-            <Certificates />
-          </section>
+        </div>
+      </section>
 
+      <section>
+        <div className='container'>
+          <Skills data={SKILLS_EXPANDED} />
+        </div>
+      </section>
+
+      <section>
+        <div className='container'>
+          <Certificates />
         </div>
       </section>
     </main>

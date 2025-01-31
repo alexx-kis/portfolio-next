@@ -11,7 +11,7 @@ function HeroSection(): React.JSX.Element {
   useHeroAnimation();
   return (
     <section
-      className='main__hero hero scroll'
+      className='hero'
       style={{
         backgroundImage: `url(${basePath}/img/bg/hero-bg.jpg)`,
       }}

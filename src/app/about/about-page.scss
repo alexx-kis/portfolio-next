@@ -5,13 +5,18 @@
 .about-hero {
   padding-block: const(60px);
   min-height: calc(100dvh);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
   &__heading {
     text-align: left;
     margin-bottom: desk(20px, 14px);
   }
 
-  &__inner {
+  &__inner {}
+
+  &__content {
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: desk(40px, 20px);
