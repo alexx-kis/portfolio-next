@@ -1,3 +1,5 @@
+@use '@/styles/abstracts' as *;
+
 // ^======================== container ========================^ //
 
 ._ {
@@ -7,7 +9,7 @@
   margin-inline: auto;
   padding-inline: desk(40px, 32px);
 
-  // @include TABLET {
-  //   padding-inline: tab(32px, 16px);
-  // }
+  @include TABLET {
+    padding-inline: tab(32px, 16px);
+  }
 }
