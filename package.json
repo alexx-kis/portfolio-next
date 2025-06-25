@@ -12,6 +12,7 @@
   "dependencies": {
     "@gsap/react": "^2.1.2",
     "gsap": "3.12.7",
+    "nanoid": "5.1.5",
     "next": "15.1.6",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"

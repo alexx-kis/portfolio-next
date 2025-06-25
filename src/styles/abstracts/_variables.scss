@@ -20,9 +20,13 @@ $TAB_HEIGHT: calc($TAB_WIDTH / $tabAsp);
 
 // %------------ colors ------------% //
 
+$white: #fff;
 $orange: #ff9532;
 $gray: #15212b;
+$lightGray: #ececec;
+$middleGray: #6b6b6b;
 $grayTransparent: #0e161d67;
+$blue: #1e6372;
 $mainGradient: linear-gradient(#1e3040, #0f151f);
 $boxShadow: 0 0 3px 0 #ffffff6e;
 $boxShadowExpanded: 0 0 10px 4px #e5e5e544;
