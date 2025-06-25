@@ -1,6 +1,4 @@
-@use '@/styles/abstracts' as *;
-
-/*@ // @======================== works ========================@ // @*/
+// @======================== works ========================@ //
 
 .works {
   &__inner {
@@ -12,14 +10,12 @@
   &__heading {
     margin-bottom: desk(60px, 40px);
 
-    @media (max-width: $TABLET) {
+    @include TABLET {
       margin-bottom: tab(40px, 20px);
     }
   }
 
-  &__list {
-   
-  }
+  &__list {}
 
   &__button {
     align-self: center;

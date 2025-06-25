@@ -1,6 +1,4 @@
-@use '@/styles/abstracts' as *;
-
-/*^ // ^======================== header-inner ========================^ // ^*/
+// ^======================== header-inner ========================^ //
 
 .header-inner {
   display: flex;
@@ -8,7 +6,7 @@
   width: 100%;
   height: 100%;
 
-  @media (max-width: $MOBILE) {
+  @include MIDDLE {
     transform: translate(100%, 0);
     background: linear-gradient(to left, #1e6372, #2f96b0);
     width: 100%;
@@ -23,7 +21,7 @@
   }
 
   &._open {
-    @media (max-width: $MOBILE) {
+    @include MIDDLE {
       z-index: 2;
       transform: translate(0%, 0);
     }
@@ -37,7 +35,7 @@
     max-width: desk(600px, 270px);
     height: 100%;
 
-    @media (max-width: $MOBILE) {
+    @include MIDDLE {
       flex-direction: column;
       height: 300px;
       flex: 0 1 auto;
@@ -56,7 +54,7 @@
       font-size: desk(20px, 18px);
       font-weight: 700;
 
-      @media (max-width: $MOBILE) {
+      @include MIDDLE {
         font-size: mob(40px, 32px);
       }
 
@@ -64,7 +62,7 @@
         content: '';
         display: block;
         width: 100%;
-        height: const(2px);
+        height: desk(2px);
         background-color: $orange;
       }
     }
@@ -73,7 +71,7 @@
       color: $orange;
     }
 
-    @media (max-width: $MOBILE) {
+    @include MIDDLE {
       font-size: mob(32px, 24px);
     }
   }

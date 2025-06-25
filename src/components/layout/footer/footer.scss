@@ -1,16 +1,14 @@
-@use '@/styles/abstracts' as *;
-
-/*$ // $======================== footer ========================$ // $*/
+// $======================== footer ========================$ //
 
 .footer {
-  padding-top: const(40px);
-  padding-bottom: const(60px);
+  padding-top: desk(40px);
+  padding-bottom: desk(60px);
   background-image: $blueGradient;
 
   &__heading {
-    margin-bottom: const(30px);
+    margin-bottom: desk(30px);
 
-    @media (max-width: $TABLET) {
+    @include TABLET {
       margin-bottom: tab(50px, 20px);
     }
   }
@@ -26,9 +24,9 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: const(20px);
+    gap: desk(20px);
 
-    @media (max-width: $TABLET) {
+    @include TABLET {
       flex-direction: column;
       align-items: center;
     }
@@ -60,9 +58,9 @@
   }
 
   &__link-icon {
-    @include square(const(24px));
+    @include square(desk(24px));
 
-    @media (max-width: $TABLET) {
+    @include TABLET {
       @include square(tab(24px, 20px));
     }
 

@@ -17,7 +17,7 @@ export default function Skills(skillsProps: SkillsProps) {
     <div
       className={clsx(
         'skills',
-        { '_expanded': pathname === AppRoute.About }
+        { '_expanded': pathname === AppRoute.ABOUT }
       )}
     >
       <h3 className='skills__heading heading _small'>

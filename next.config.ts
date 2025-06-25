@@ -7,7 +7,10 @@ const nextConfig: NextConfig = {
   reactStrictMode: true,
   images: {
     unoptimized: true
-  }
+  },
+  sassOptions: {
+    prependData: `@use '@/styles/abstracts' as *;`,
+  },
 };
 
 export default nextConfig;

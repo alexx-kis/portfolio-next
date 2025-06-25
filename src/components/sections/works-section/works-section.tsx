@@ -1,4 +1,4 @@
-'use client'
+'use client';
 
 import WorksList from '@/components/layout/works-list/works-list';
 import MainButton from '@/components/ui/main-button/main-button';
@@ -22,11 +22,11 @@ function WorksSection(): React.JSX.Element {
           <WorksList worksList={worksList} />
           <MainButton
             bemClassName='works__button'
-            href={AppRoute.Works}
+            href={AppRoute.WORKS}
             text='See more'
             iconPath={`${basePath}/img/icons/go-to-arrow.svg`}
             onMainButtonClick={(e: React.MouseEvent<HTMLAnchorElement>) => {
-              handleTransition(e, AppRoute.Works);
+              handleTransition(e, AppRoute.WORKS);
             }}
           />
         </div>

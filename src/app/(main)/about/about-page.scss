@@ -1,9 +1,7 @@
-@use '@/styles/abstracts' as *;
-
 /*# // #======================== about-page ========================# // #*/
 
 .about-hero {
-  padding-block: const(60px);
+  padding-block: desk(60px);
   min-height: calc(100dvh);
   display: flex;
   flex-direction: column;
@@ -22,13 +20,13 @@
     gap: desk(40px, 20px);
     margin-bottom: desk(40px, 20px);
 
-    @media (max-width: $MOBILE) {
+    @include MIDDLE {
       grid-template-columns: auto;
     }
   }
 
   &__image-wrapper {
-    @media (max-width: $MOBILE) {
+    @include MIDDLE {
       width: 100%;
       height: tab(400px, 200px);
     }
@@ -38,7 +36,7 @@
       height: 100%;
       object-fit: cover;
 
-      @media (max-width: $MOBILE) {
+      @include MIDDLE {
         object-position: 0 10%;
       }
     }

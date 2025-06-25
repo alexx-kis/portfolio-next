@@ -1,19 +1,17 @@
-@use '@/styles/abstracts' as *;
-
-/*$ // $======================== works-list ========================$ // $*/
+// $======================== works-list ========================$ //
 
 .works-list {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: const(14px);
+  gap: desk(14px);
   justify-items: center;
   margin-bottom: desk(40px, 32px);
 
-  @media (max-width: $LAPTOP) {
+  @include LAPTOP {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  @media (max-width: $MOBILE) {
+  @include MIDDLE {
     display: flex;
     width: 100vw;
     margin-inline: 0;

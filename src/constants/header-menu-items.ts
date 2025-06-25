@@ -7,15 +7,15 @@ type HeaderMenuItem = {
 
 export const HEADER_MENU_ITEMS: HeaderMenuItem[] = [
   {
-    link: AppRoute.Main,
+    link: AppRoute.MAIN,
     name: 'Home',
   },
   {
-    link: AppRoute.About,
+    link: AppRoute.ABOUT,
     name: 'About me',
   },
   {
-    link: AppRoute.Works,
+    link: AppRoute.WORKS,
     name: 'My works',
   },
   {

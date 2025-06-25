@@ -1,6 +1,4 @@
-@use '@/styles/abstracts' as *;
-
-/*^ // ^======================== header-lang ========================^ // ^*/
+// ^======================== header-lang ========================^ //
 
 .header-lang {
   display: flex;
@@ -9,7 +7,7 @@
   position: relative;
   cursor: pointer;
 
-  @media (max-width: $MOBILE) {
+  @include MIDDLE {
     width: auto;
     margin: 0 auto;
   }
@@ -33,7 +31,7 @@
     border-radius: 50%;
     @include square(desk(28px, 20px));
 
-    @media (max-width: $MOBILE) {
+    @include MIDDLE {
       @include square(mob(40px, 32px));
     }
 
@@ -45,15 +43,15 @@
 
   &__name {
     color: #fff;
-    font-size: const(14px);
+    font-size: desk(14px);
 
-    @media (max-width: $MOBILE) {
+    @include MIDDLE {
       font-size: mob(28px, 22px);
     }
   }
 
   &__dropdown {
-    padding: const(10px);
+    padding: desk(10px);
     position: absolute;
     left: -1px;
     top: 50px;
@@ -63,7 +61,7 @@
     background: #247688;
     transition: all .3s;
 
-    @media (max-width: $MOBILE) {
+    @include MIDDLE {
       margin-inline: auto;
       background: transparent;
     }

@@ -1,9 +1,7 @@
-@use '@/styles/abstracts' as *;
-
 /*# // #======================== works page ========================# // #*/
 
 .works-hero {
-  padding-block: const(60px);
+  padding-block: desk(60px);
   min-height: calc(100dvh);
 
   &__heading {

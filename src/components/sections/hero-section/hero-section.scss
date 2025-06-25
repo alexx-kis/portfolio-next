@@ -1,6 +1,4 @@
-@use '@/styles/abstracts' as *;
-
-/*@ // @======================== hero-section ========================@ // @*/
+// @======================== hero-section ========================@ //
 
 .hero {
   height: 100dvh;
@@ -17,20 +15,20 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    max-width: const(820px);
+    max-width: desk(820px);
     height: 100%;
     margin: 0 auto;
   }
 
   &__heading {
     align-self: flex-start;
-    margin-bottom: const(10px);
+    margin-bottom: desk(10px);
   }
 
   &__text {
     font-size: desk(44px, 38px);
     font-family: druk;
-    margin-bottom: const(50px);
+    margin-bottom: desk(50px);
 
     @include TABLET {
       font-size: tab(38px, 30px);

@@ -1,16 +1,14 @@
-@use '@/styles/abstracts' as *;
-
-/*^ // ^======================== work ========================^ // ^*/
+// ^======================== work ========================^ //
 
 .work {
   width: 100%;
   height: 100%;
-  padding: const(14px);
+  padding: desk(14px);
   box-shadow: $boxShadow;
   background-color: $gray;
   transition: all 250ms;
 
-  @media (max-width: $MOBILE) {
+  @include MIDDLE {
     flex-shrink: 0;
     width: 100vw;
     padding-inline: 20px;
@@ -21,10 +19,10 @@
 
   @media (hover:hover) {
     &:hover {
-      box-shadow: 0 0 const(10px) const(4px) #e5e5e544;
+      box-shadow: 0 0 desk(10px) desk(4px) #e5e5e544;
     }
 
-    @media (max-width: $MOBILE) {
+    @include MIDDLE {
       box-shadow: none;
     }
   }
@@ -36,7 +34,7 @@
     height: 100%;
     color: inherit;
 
-    @media (max-width: $MOBILE) {
+    @include MIDDLE {
       justify-content: space-between;
       gap: 10px;
       width: auto;
@@ -57,7 +55,7 @@
     overflow: clip;
     width: 100%;
 
-    @media (max-width: $MOBILE) {
+    @include MIDDLE {
       aspect-ratio: unset;
       display: flex;
       justify-content: center;
@@ -75,7 +73,7 @@
     object-fit: cover;
     transition: all .3s;
 
-    @media (max-width: $MOBILE) {
+    @include MIDDLE {
       width: auto;
       height: 100%;
       aspect-ratio: 0.46;
@@ -87,15 +85,15 @@
     flex-grow: 1;
     display: flex;
     flex-direction: column;
-    gap: const(20px);
-    padding-inline: const(10px);
+    gap: desk(20px);
+    padding-inline: desk(10px);
   }
 
   &__title {
     font-size: desk(24px, 20px);
     font-weight: 700;
 
-    @media (max-width: $TABLET) {
+    @include TABLET {
       font-size: tab(20px, 18px);
     }
   }
@@ -103,21 +101,21 @@
   &__desc {
     font-size: desk(18px, 16px);
 
-    @media (max-width: $TABLET) {
+    @include TABLET {
       font-size: tab(16px, 14px);
     }
   }
 
   &__technologies {
     display: flex;
-    gap: const(4px);
+    gap: desk(4px);
     margin-top: auto;
   }
 
   &__technology {
-    padding-inline: const(8px);
-    padding-block: const(4px);
-    border: const(1px) solid #ffffffaa;
-    font-size: const(14px);
+    padding-inline: desk(8px);
+    padding-block: desk(4px);
+    border: desk(1px) solid #ffffffaa;
+    font-size: desk(14px);
   }
 }

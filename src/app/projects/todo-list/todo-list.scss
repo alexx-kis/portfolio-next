@@ -1,0 +1,9 @@
+// #======================== todo-list ========================# //
+
+.todo-list-page {
+  min-height: 100dvh;
+
+  &__inner {
+    padding-block: desk(100px);
+  }
+}

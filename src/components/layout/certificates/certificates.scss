@@ -1,13 +1,11 @@
-@use '@/styles/abstracts' as *;
-
-/*$ // $======================== certificates ========================$ // $*/
+// $======================== certificates ========================$ //
 
 .certificates {
   &__heading {
     margin-bottom: desk(32px, 28px);
     text-align: left;
 
-    @media (max-width: $TABLET) {
+    @include TABLET {
       margin-bottom: tab(28px, 20px);
     }
   }
@@ -16,17 +14,17 @@
     display: flex;
     gap: desk(40px, 32px);
 
-    @media (max-width: $TABLET) {
+    @include TABLET {
       flex-direction: column;
     }
   }
 
   &__item {
-    @media (max-width: $TABLET) {
+    @include TABLET {
       width: 400px;
     }
 
-    @media (max-width: $MOBILE) {
+    @include MIDDLE {
       width: 100%;
     }
 

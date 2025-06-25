@@ -1,13 +1,11 @@
-@use '@/styles/abstracts' as *;
-
-/*@ // @======================== skills ========================@ // @*/
+// @======================== skills ========================@ //
 
 .skills {
   &__heading {
     margin-bottom: desk(32px, 28px);
     text-align: left;
 
-    @media (max-width: $TABLET) {
+    @include TABLET {
       margin-bottom: tab(28px, 20px);
     }
   }
@@ -26,7 +24,7 @@
     gap: desk(18px, 16px);
     flex-wrap: wrap;
 
-    @media (max-width: $TABLET) {
+    @include TABLET {
       gap: tab(16px, 12px);
     }
   }
@@ -37,7 +35,7 @@
     letter-spacing: .1dvh;
     font-size: desk(20px, 18px);
 
-    @media (max-width: $TABLET) {
+    @include TABLET {
       font-size: tab(18px, 16px);
     }
   }
@@ -47,7 +45,7 @@
     flex-wrap: wrap;
     gap: desk(20px, 16px);
 
-    @media (max-width: $TABLET) {
+    @include TABLET {
       gap: tab(16px, 12px);
     }
   }

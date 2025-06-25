@@ -1,12 +1,10 @@
-@use '@/styles/abstracts' as *;
-
-/*^ // ^======================== header-socials ========================^ // ^*/
+// ^======================== header-socials ========================^ //
 
 .header-socials {
   flex: 1 1 auto;
   max-width: desk(350px, 140px);
 
-  @media (max-width: $MOBILE) {
+  @include MIDDLE {
     display: none;
   }
 

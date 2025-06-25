@@ -1,6 +1,4 @@
-@use '@/styles/abstracts' as *;
-
-/*^ // ^======================== burger ========================^ // ^*/
+// ^======================== burger ========================^ //
 
 .burger {
   cursor: pointer;
@@ -15,7 +13,7 @@
   transition: all .5s;
   display: none;
 
-  @media (max-width: $MOBILE) {
+  @include MIDDLE {
     display: flex;
   }
 

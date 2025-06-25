@@ -1,13 +1,11 @@
-@use '@/styles/abstracts' as *;
-
-/*$ // $======================== header ========================$ // $*/
+// $======================== header ========================$ //
 
 .header {
   width: 100%;
   position: fixed;
   z-index: 2;
   background-image: $blueGradient;
-  height: const(50px);
+  height: desk(50px);
 
   &_loaded {
     opacity: 1;

@@ -1,11 +1,9 @@
-@use '@/styles/abstracts' as *;
-
-/*^ //^======================== skill ========================^// ^*/
+//^======================== skill ========================^//
 .skill {
   &__inner {
     display: flex;
     align-items: center;
-    gap: const(10px);
+    gap: desk(10px);
     padding-inline: desk(14px, 12px);
     padding-block: desk(8px, 6px);
     box-shadow: $boxShadow;
@@ -15,7 +13,7 @@
     backdrop-filter: blur(max(0.417vw, 6px));
     transition: all 250ms;
 
-    @media (max-width: $TABLET) {
+    @include TABLET {
       height: tab(34px, 32px);
       padding-inline: tab(12px, 10px);
     }
@@ -27,11 +25,11 @@
 
   &._expanded {
     align-items: center;
-    gap: const(20px);
+    gap: desk(20px);
     display: grid;
     grid-template-columns: auto 1fr;
-    
-    @media (max-width: $TABLET) {
+
+    @include TABLET {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
@@ -42,7 +40,7 @@
       &__inner {
         width: desk(320px, 320px);
 
-        @media (max-width: $MOBILE) {
+        @include MIDDLE {
           width: 100%;
         }
       }
@@ -54,7 +52,7 @@
       &__name {
         font-size: desk(18px, 16px);
 
-        @media (max-width: $TABLET) {
+        @include TABLET {
           font-size: tab(18px, 14px);
         }
       }
@@ -72,7 +70,7 @@
   &__name {
     font-size: desk(16px, 14px);
 
-    @media (max-width: $TABLET) {
+    @include TABLET {
       font-size: tab(16px, 14px);
     }
   }

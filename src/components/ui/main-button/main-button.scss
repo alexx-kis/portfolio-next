@@ -1,17 +1,15 @@
-@use '@/styles/abstracts' as *;
-
-/*^ // ^======================== main-button ========================^ // ^*/
+// ^======================== main-button ========================^ //
 
 .main-button {
   display: inline-flex;
   align-items: center;
-  gap: const(8px);
-  padding-inline: const(20px);
-  padding-block: const(14px);
+  gap: desk(8px);
+  padding-inline: desk(20px);
+  padding-block: desk(14px);
   box-shadow: $boxShadow;
   background: $blueGradient;
   color: #fff;
-  font-size: const(20px);
+  font-size: desk(20px);
   transition: all 250ms;
 
   @media (hover:hover) {

@@ -3,22 +3,22 @@ export const basePath = process.env.NODE_ENV === 'production'
   : '';
 
 export enum AppRoute {
-  Main = '/',
-  About = '/about',
-  Works = '/works'
+  MAIN = '/',
+  ABOUT = '/about',
+  WORKS = '/works'
 }
 
 export const HEADER_MENU_ITEMS = [
   {
-    link: AppRoute.Main,
+    link: AppRoute.MAIN,
     name: 'Home',
   },
   {
-    link: AppRoute.About,
+    link: AppRoute.ABOUT,
     name: 'About me',
   },
   {
-    link: AppRoute.Works,
+    link: AppRoute.WORKS,
     name: 'My works',
   },
   {

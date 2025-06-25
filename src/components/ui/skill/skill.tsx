@@ -22,9 +22,9 @@ export default function Skill(skillProps: SkillProps): React.JSX.Element {
     <li
       className={clsx(
         `${bemClassName} skill`,
-        { '_expanded': pathname === AppRoute.About }
+        { '_expanded': pathname === AppRoute.ABOUT }
       )}
-      >
+    >
       <div
         className='skill__inner'
         ref={skillRef}

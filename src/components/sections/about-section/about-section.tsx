@@ -71,11 +71,11 @@ function AboutSection(): React.JSX.Element {
           <Skills data={SKILLS_CONCISE} />
           <MainButton
             bemClassName='about__button'
-            href={AppRoute.About}
+            href={AppRoute.ABOUT}
             text='Learn more'
             iconPath={`${basePath}/img/icons/go-to-arrow.svg`}
             onMainButtonClick={(e) => {
-              handleTransition(e, AppRoute.About);
+              handleTransition(e, AppRoute.ABOUT);
             }}
           />
         </div>

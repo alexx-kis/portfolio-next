@@ -1,6 +1,4 @@
-@use '@/styles/abstracts' as *;
-
-/*@ // @======================== about ========================@ // @*/
+// @======================== about ========================@ //
 
 .about {
   position: relative;
@@ -12,11 +10,11 @@
     justify-content: space-evenly;
     gap: desk(50px, 25px);
 
-    @media (max-width: $TABLET) {
+    @include TABLET {
       gap: tab(25px, 20spx);
     }
 
-    @media (max-width: $MOBILE) {
+    @include MIDDLE {
       flex-direction: column;
     }
   }
@@ -24,9 +22,9 @@
   &__header {
     display: grid;
     grid-template-columns: 2.5fr 1fr;
-    gap: const(20px);
+    gap: desk(20px);
 
-    @media (max-width: $MOBILE) {
+    @include MIDDLE {
       display: flex;
       flex-direction: column;
     }
@@ -35,7 +33,7 @@
   &__headings {
     // display: flex;
     flex-direction: column;
-    gap: const(10px);
+    gap: desk(10px);
   }
 
   &__heading {
@@ -43,7 +41,7 @@
     text-align: left;
     text-wrap: balance;
 
-    @media (max-width: $TABLET) {
+    @include TABLET {
       font-size: tab(30px, 24px);
     }
   }
@@ -52,7 +50,7 @@
     overflow: clip;
     height: auto;
 
-    @media (max-width: $MOBILE) {
+    @include MIDDLE {
       height: mob(400px, 200px);
     }
 
@@ -76,7 +74,7 @@
     font-size: desk(20px, 18px);
     text-align: justify;
 
-    @media (max-width: $TABLET) {
+    @include TABLET {
       font-size: tab(20px, 14px);
     }
   }
