@@ -3,41 +3,18 @@
 import Skills from '@/components/layout/skills/skills';
 import MainButton from '@/components/ui/main-button/main-button';
 import { AppRoute, basePath } from '@/constants/const';
-import { ViewportWidth } from '@/constants/viewport';
 import { aboutSectionText } from '@/data/about';
 import { SKILLS_CONCISE } from '@/data/skills';
 import { useAboutAnimation } from '@/hooks/animation/use-about-animation';
 import { useTransitionLink } from '@/hooks/use-transition-link';
 import { splitTextToParagraphs } from '@/utils/utils';
 import Image from 'next/image';
-import { useEffect, useRef } from 'react';
 import './about-section.scss';
 
 // @======================== AboutSection ========================@ //
 
-type Element = HTMLDivElement | null;
-
 function AboutSection(): React.JSX.Element {
   useAboutAnimation();
-
-  const imageWrapperRef = useRef<Element>(null);
-  const headingsRef = useRef<Element>(null);
-
-  const adjustElementHeight = (reference: Element, element: Element) => {
-    if (reference && element) {
-      element.style.height = '0px';
-      element.style.height = `${reference.clientHeight}px`;
-    }
-  };
-
-  useEffect(() => {
-    if (window.innerWidth > ViewportWidth.MOBILE) {
-      adjustElementHeight(headingsRef.current, imageWrapperRef.current);
-      window.addEventListener('resize', () => {
-        adjustElementHeight(headingsRef.current, imageWrapperRef.current);
-      });
-    }
-  });
 
   const { handleTransition } = useTransitionLink();
 
@@ -46,13 +23,13 @@ function AboutSection(): React.JSX.Element {
       <div className='container'>
         <div className='about__inner'>
           <div className='about__header'>
-            <div className='about__headings' ref={headingsRef}>
+            <div className='about__headings' >
               <h2 className='about__heading heading'>Hi!</h2>
               <h2 className='about__heading heading'>
                 My name is Alex and I am a frontend developer
               </h2>
             </div>
-            <div className='about__image-wrapper' ref={imageWrapperRef}>
+            <div className='about__image-wrapper' >
               <Image
                 src={`${basePath}/img/avatar-big.png`}
                 alt=''

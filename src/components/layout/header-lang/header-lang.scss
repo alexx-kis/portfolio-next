@@ -34,7 +34,7 @@
     @include square(desk(28px, 20px));
 
     @include MIDDLE {
-      @include square(mob(40px, 32px));
+      @include square(mid(40px, 32px));
     }
 
     img {
@@ -48,7 +48,7 @@
     font-size: desk(14px);
 
     @include MIDDLE {
-      font-size: mob(28px, 22px);
+      font-size: mid(28px, 22px);
     }
   }
 

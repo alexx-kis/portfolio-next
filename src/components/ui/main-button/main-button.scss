@@ -14,10 +14,8 @@
   font-size: desk(20px);
   transition: all 250ms;
 
-  @media (hover:hover) {
-    &:hover {
-      box-shadow: $boxShadowExpanded;
-    }
+  @include HOVER {
+    box-shadow: 0 0 desk(20px) desk(2px) #e5e5e544;
   }
 
   &__text {

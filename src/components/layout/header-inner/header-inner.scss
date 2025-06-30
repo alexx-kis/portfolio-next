@@ -57,7 +57,7 @@
       font-weight: 700;
 
       @include MIDDLE {
-        font-size: mob(40px, 32px);
+        font-size: mid(40px, 32px);
       }
 
       &::after {
@@ -74,7 +74,7 @@
     }
 
     @include MIDDLE {
-      font-size: mob(32px, 24px);
+      font-size: mid(32px, 24px);
     }
   }
 }

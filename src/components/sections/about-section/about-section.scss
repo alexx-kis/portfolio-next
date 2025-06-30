@@ -53,7 +53,7 @@
     height: auto;
 
     @include MIDDLE {
-      height: mob(400px, 200px);
+      height: mid(400px, 200px);
     }
 
     img {

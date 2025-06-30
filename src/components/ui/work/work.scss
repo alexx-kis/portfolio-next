@@ -7,7 +7,7 @@
   height: 100%;
   padding: desk(14px);
   box-shadow: $boxShadow;
-  background-color: $gray;
+  background-color: #ffffff09;
   transition: all 250ms;
 
   @include MIDDLE {
@@ -19,14 +19,8 @@
     box-shadow: none;
   }
 
-  @media (hover:hover) {
-    &:hover {
-      box-shadow: 0 0 desk(10px) desk(4px) #e5e5e544;
-    }
-
-    @include MIDDLE {
-      box-shadow: none;
-    }
+  @include HOVER {
+    box-shadow: 0 0 desk(20px) desk(2px) #e5e5e544;
   }
 
   &__link {
